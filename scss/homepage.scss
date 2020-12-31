@@ -1,13 +1,53 @@
 @import 'config';
+@import './breakpoints/breakpoints';
 
 header {
     background-color: $primary-color;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 30px 150px 0px 150px;
+
+    img {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    nav {
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+
+        ul {
+            display: flex;
+            justify-content: space-between;
+            list-style-type: none;
+            color:#8487B0;
+            font-weight: bold;
+        }
+    
+        li {
+            margin-right: 32px;
+            font-size: 17px;
+            font-weight: bold;
+            letter-spacing: 0;
+            line-height: 21px;
+        }
+    }
+}
+
+.welcome {
+    background-color: $primary-color;
     background-image: url(/dist/images/nis-pattern-ilustration/nis-ilustracija-02.svg), url(/dist/images/nis-fortress-ilustration/nis-ilustracija.svg);
     background-repeat: no-repeat, no-repeat;
-    background-position: calc(0% - 330px) calc(50% + 40px), calc(100% + 330px) calc(50% + 40px);
+    background-position: calc(0% - 330px) calc(50% + 20px), calc(100% + 330px) calc(50% + 20px);
     width: 100%;
-    height: 478px;
+    height: 420px;
     position: relative;
+
+    @media(max-width: 740px) {
+        background-image: url(/dist/images/companies/cover-photos/neopix-cover.jpg);
+    }
 
     h1, h2, h3, p {
         color: set-color($primary-color)
@@ -30,30 +70,6 @@ header {
     }
 }
 
-nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-top: 30px;
-    margin-left: 150px;
-    margin-right: 150px;
-
-    ul {
-        display: flex;
-        list-style-type: none;
-        color:#8487B0;
-        font-weight: bold;
-    }
-
-    li {
-        margin-right: 32px;
-        font-size: 17px;
-        font-weight: bold;
-        letter-spacing: 0;
-        line-height: 21px;
-    }
-}
-
 main {
     background-color: $ghost-white;
     width: 100%;
@@ -65,7 +81,12 @@ main {
     display: grid;
     grid-gap: 30px;
     justify-items: center;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    @media(max-width: 740px) {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+    }
 }
 
 .company-card {
@@ -222,6 +243,12 @@ main {
     padding: 120px 144px 0px 150px;
     position: relative;
 
+    @media(max-width: 740px) {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        padding: 1rem;
+    }
+
     img {
         position: absolute;
         top: 160px;
@@ -280,6 +307,11 @@ footer {
         display: flex;
         flex-direction: column;
         flex: 1;
+
+        @media(max-width: 740px) {
+            grid-template-columns: 1fr;
+            padding: 1rem;
+        }
 
         .contact {
             margin-top: auto;
