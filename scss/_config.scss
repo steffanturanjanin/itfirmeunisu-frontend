@@ -1,3 +1,6 @@
+@import "include-media";
+@import "media";
+
 $primary-color: #14163A;
 $primary-color-light: #5D6BF6;
 $white: #FFFFFF;
@@ -5,8 +8,13 @@ $ghost-white: #F9FAFF;
 $black: #000000;
 
 @font-face {
-    font-family: GoogleSans;
+    font-family: GoogleSansRegular;
     src: url(/dist/fonts/Google-Sans-Fonts/GoogleSans-Regular.ttf);
+}
+
+@font-face {
+  font-family: GoogleSansBold;
+  src: url(/dist/fonts/Google-Sans-Fonts/GoogleSans-Bold.ttf);
 }
 
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
@@ -15,12 +23,50 @@ $black: #000000;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Open Sans';
+    font-family: 'GoogleSansBold', 'GoogleSansRegular';
+
+    h1 {
+      font-size: 36px;
+      font-weight: bold;
+      letter-spacing: 0;
+      line-height: 46px;
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 32px;
+      font-weight: bold;
+      letter-spacing: 0;
+      line-height: 41px;
+    }
+
+    @include breakpoint-up(medium) {
+      h1 {
+        font-size: 64px;
+        letter-spacing: 0;
+        line-height: 82px;
+      }
+  
+      h2 {
+        font-size: 48px;
+        font-weight: bold;
+        letter-spacing: 0;
+        line-height: 61px;
+      }
+    }
 }
+
+.container {
+  width: 100%;
+  max-width: 1188px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
 
 @function set-color($color) {
     @if (lightness($color) > 40) {
-      @return $black;
+      @return $primary-color;
     }
     @else {
       @return $white;

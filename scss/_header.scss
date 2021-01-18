@@ -1,0 +1,38 @@
+header {
+    background-color: transparent;
+    width: 100%;
+    min-width: 280px;
+    padding-top: 18px;
+
+    .container--nav {
+        display: flex;
+    }
+
+    nav {
+        display: flex;
+        justify-content: flex-end;
+        align-self: center;
+        width: 100%;
+
+        ul {
+            display: flex;
+            justify-content: space-between;
+            list-style-type: none;
+            color:#8487B0;
+            font-weight: bold;
+
+            @media(max-width: 860px) {
+                display: none;
+            }
+                
+        }   
+    
+        li {
+            margin-left: 32px;
+            font-size: 17px;
+            font-weight: bold;
+            letter-spacing: 0;
+            line-height: 21px;
+        }
+    }
+}
