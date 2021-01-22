@@ -17,12 +17,20 @@ footer {
         flex-direction: column;
         flex: 1;
 
+        @media(min-width: 1100px) {
+            padding-top: 120px;
+        }
+
         .contact {
             margin-top: auto;
             display:flex;
             flex-direction: column;
             justify-content: space-between;
             margin-bottom: 40px;
+
+            @media(min-width: 1100px) {
+                flex-direction: row-reverse;
+            }
 
             :not(:last-child) {
                 margin-bottom: 20px;

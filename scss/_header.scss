@@ -1,38 +1,205 @@
+@import 'animations';
+
 header {
     background-color: transparent;
     width: 100%;
     min-width: 280px;
-    padding-top: 18px;
+ 
 
-    .container--nav {
-        display: flex;
+    #logo, #btnHamburger {
+        z-index: 100;
     }
 
-    nav {
-        display: flex;
-        justify-content: flex-end;
-        align-self: center;
-        width: 100%;
+    #btnHamburger {
+        width: 22px;
+        height: 22px;
 
-        ul {
+        @media(min-width: 860px) {
+            display: none;
+        }
+    }
+
+    .hamburger {
+        position: absolute; right:24px;
+
+        &.invisible {
+            visibility: hidden;
+            //animation: fade-out 300ms ease-in-out forwards; 
+        }
+
+        &.visible {
+            visibility: visible;
+            //animation: fade-in 800ms ease-in-out forwards;
+        }
+    }
+
+    .nav__menu {
+
+        .nav__item {
+            padding: 8px 0;
+
+            .select {
+                color:white;
+                
+            }
+
+            &:hover {
+                color: white;
+        
+            }
+        }
+
+        .nav__item:after {
+            transition: all ease-in-out .2s;
+            background: none repeat scroll 0 0 $primary-color-light;
+            content: "";
+            display: block;
+            height: 2px;
+            margin-top: 8px;
+            width: 0;
+            //border-bottom: solid 2px $primary-color-light;
+        }
+        
+        .nav__item:hover:after {
+            //display: block;
+
+            width: 100%;
+        }
+
+        @media(max-width: 860px) {
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            z-index: 2;
+            visibility: hidden;     
+            overflow: hidden;      
+            background-color: $primary-color-light;      
+        }       
+
+        .has-submenu {
+            display: none;
+        }
+
+        &.close {
+            animation: fade-out 300ms ease-in-out forwards;  
+            
+        }
+
+        &.open {
+            animation: fade-in 300ms ease-in-out forwards; 
+                  
+          
+            .nav__container {
+
+                @media(max-width: 860px) {
+                    display: flex;
+                    flex-direction: column;
+                    margin: 0;
+                    // padding-top: 120px;
+                    // padding-bottom: 120px; 
+                    padding: 120px 24px;
+
+                    .nav__item {
+                        font-size: 20px;
+                        color: white;
+                        font-weight: bold;
+                        letter-spacing: 0;
+                        line-height: 25px;
+                        padding-bottom: 16px;
+                        margin: 0;
+
+                        &.select {                           
+                            color: lighten($color: $primary-color, $amount: 18);                           
+                        }
+                    }
+                }
+            }
+
+            .has-submenu {
+                @media(max-width: 860px) {
+                    display: block;
+
+                    &__container {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        padding-bottom: 16px;
+                    }
+
+                    .nav__item {
+                        padding-bottom: 0;
+                    }
+
+                    .submenu {
+                        flex-direction: column;
+                        padding-bottom: 24px;
+
+                        :not(:last-child) {
+                            padding-bottom: 16px;
+                        }
+
+                        &.spread {
+                            display: flex;
+                            animation: fade-in 300ms ease-in-out forwards; 
+                        }
+
+                        &.collapsed {
+                            display: none; 
+                        }
+                    }
+
+                    .submenu__item {
+                        font-size: 16px;
+                        color: white;
+                        opacity: 0.65;
+                        font-weight: bold;
+                        letter-spacing: 0;
+                        line-height: 20px;
+                        text-decoration: initial;
+                        padding-left: 16px;
+                        padding-right: 16px;
+
+                        &.select {                           
+                            color: lighten($color: $primary-color, $amount: 18);                           
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 18px 0;
+
+
+        &__container {
             display: flex;
             justify-content: space-between;
-            list-style-type: none;
             color:#8487B0;
             font-weight: bold;
+
 
             @media(max-width: 860px) {
                 display: none;
             }
-                
-        }   
-    
-        li {
+        }
+
+        &__item {
             margin-left: 32px;
             font-size: 17px;
             font-weight: bold;
             letter-spacing: 0;
             line-height: 21px;
+            color: inherit;
+            text-decoration: inherit;
         }
+
     }
 }
