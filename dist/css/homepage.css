@@ -159,53 +159,20 @@
   }
 }
 
-header {
-  background-color: transparent;
-  width: 100%;
-  min-width: 280px;
+.nav__menu .nav__item {
+  display: inline-block;
+  padding: 16px 0 8px 0;
 }
 
-header #logo, header #btnHamburger {
-  z-index: 100;
-}
-
-header #btnHamburger {
-  width: 22px;
-  height: 22px;
-}
-
-@media (min-width: 860px) {
-  header #btnHamburger {
-    display: none;
-  }
-}
-
-header .hamburger {
-  position: absolute;
-  right: 24px;
-}
-
-header .hamburger.invisible {
-  visibility: hidden;
-}
-
-header .hamburger.visible {
-  visibility: visible;
-}
-
-header .nav__menu .nav__item {
-  padding: 8px 0;
-}
-
-header .nav__menu .nav__item .select {
+.nav__menu .nav__item .select {
   color: white;
 }
 
-header .nav__menu .nav__item:hover {
+.nav__menu .nav__item:hover {
   color: white;
 }
 
-header .nav__menu .nav__item:after {
+.nav__menu .nav__item:after {
   -webkit-transition: all ease-in-out .2s;
   transition: all ease-in-out .2s;
   background: none repeat scroll 0 0 #5D6BF6;
@@ -216,12 +183,12 @@ header .nav__menu .nav__item:after {
   width: 0;
 }
 
-header .nav__menu .nav__item:hover:after {
+.nav__menu .nav__item:hover:after {
   width: 100%;
 }
 
 @media (max-width: 860px) {
-  header .nav__menu {
+  .nav__menu {
     position: fixed;
     top: 0;
     bottom: 0;
@@ -234,22 +201,22 @@ header .nav__menu .nav__item:hover:after {
   }
 }
 
-header .nav__menu .has-submenu {
+.nav__menu .has-submenu {
   display: none;
 }
 
-header .nav__menu.close {
+.nav__menu.close {
   -webkit-animation: fade-out 300ms ease-in-out forwards;
           animation: fade-out 300ms ease-in-out forwards;
 }
 
-header .nav__menu.open {
+.nav__menu.open {
   -webkit-animation: fade-in 300ms ease-in-out forwards;
           animation: fade-in 300ms ease-in-out forwards;
 }
 
 @media (max-width: 860px) {
-  header .nav__menu.open .nav__container {
+  .nav__menu.open .nav__container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -260,7 +227,7 @@ header .nav__menu.open {
     margin: 0;
     padding: 120px 24px;
   }
-  header .nav__menu.open .nav__container .nav__item {
+  .nav__menu.open .nav__container .nav__item {
     font-size: 20px;
     color: white;
     font-weight: bold;
@@ -269,16 +236,16 @@ header .nav__menu.open {
     padding-bottom: 16px;
     margin: 0;
   }
-  header .nav__menu.open .nav__container .nav__item.select {
+  .nav__menu.open .nav__container .nav__item.select {
     color: #2c307e;
   }
 }
 
 @media (max-width: 860px) {
-  header .nav__menu.open .has-submenu {
+  .nav__menu.open .has-submenu {
     display: block;
   }
-  header .nav__menu.open .has-submenu__container {
+  .nav__menu.open .has-submenu__container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -290,30 +257,30 @@ header .nav__menu.open {
             align-items: center;
     padding-bottom: 16px;
   }
-  header .nav__menu.open .has-submenu .nav__item {
+  .nav__menu.open .has-submenu .nav__item {
     padding-bottom: 0;
   }
-  header .nav__menu.open .has-submenu .submenu {
+  .nav__menu.open .has-submenu .submenu {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
     padding-bottom: 24px;
   }
-  header .nav__menu.open .has-submenu .submenu :not(:last-child) {
+  .nav__menu.open .has-submenu .submenu :not(:last-child) {
     padding-bottom: 16px;
   }
-  header .nav__menu.open .has-submenu .submenu.spread {
+  .nav__menu.open .has-submenu .submenu.spread {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-animation: fade-in 300ms ease-in-out forwards;
             animation: fade-in 300ms ease-in-out forwards;
   }
-  header .nav__menu.open .has-submenu .submenu.collapsed {
+  .nav__menu.open .has-submenu .submenu.collapsed {
     display: none;
   }
-  header .nav__menu.open .has-submenu .submenu__item {
+  .nav__menu.open .has-submenu .submenu__item {
     font-size: 16px;
     color: white;
     opacity: 0.65;
@@ -324,12 +291,18 @@ header .nav__menu.open {
     padding-left: 16px;
     padding-right: 16px;
   }
-  header .nav__menu.open .has-submenu .submenu__item.select {
+  .nav__menu.open .has-submenu .submenu__item.select {
     color: #2c307e;
   }
 }
 
-header .nav {
+header {
+  background-color: transparent;
+  width: 100%;
+  min-width: 320px;
+}
+
+.nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -343,7 +316,7 @@ header .nav {
   padding: 18px 0;
 }
 
-header .nav__container {
+.nav__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -355,12 +328,12 @@ header .nav__container {
 }
 
 @media (max-width: 860px) {
-  header .nav__container {
+  .nav__container {
     display: none;
   }
 }
 
-header .nav__item {
+.nav__item {
   margin-left: 32px;
   font-size: 17px;
   font-weight: bold;
@@ -370,16 +343,50 @@ header .nav__item {
   text-decoration: inherit;
 }
 
+.hamburger {
+  position: absolute;
+  right: 24px;
+}
+
+.hamburger.invisible {
+  visibility: hidden;
+}
+
+.hamburger.visible {
+  visibility: visible;
+}
+
+#logo, #btnHamburger {
+  z-index: 100;
+}
+
+#btnHamburger {
+  width: 22px;
+  height: 22px;
+}
+
+@media (min-width: 860px) {
+  #btnHamburger {
+    display: none;
+  }
+}
+
 footer {
   width: 100%;
-  min-width: 280px;
-  height: 501px;
+  min-width: 351px;
+  height: 485px;
   background-color: #14163A;
   background-image: url(/dist/images/symbols/symbols.svg);
   background-repeat: no-repeat;
-  background-position: 0;
+  background-position: right;
   position: relative;
   color: #FFFFFF;
+}
+
+@media (min-width: 900px) {
+  footer {
+    height: 501px;
+  }
 }
 
 footer .footer-content {
@@ -561,7 +568,7 @@ footer h2 {
   background-repeat: no-repeat;
   background-position: -10% calc(100% - 24px);
   width: 100%;
-  min-width: 280px;
+  min-width: 351px;
   height: 400px;
   position: relative;
   color: #FFFFFF;
@@ -576,6 +583,12 @@ footer h2 {
           transform: translate(-50%, -50%);
 }
 
+@media screen and (min-width: 860px) {
+  .hero {
+    height: 478px;
+  }
+}
+
 .hero h1 {
   text-align: center;
 }
@@ -587,7 +600,7 @@ footer h2 {
 main {
   background-color: #F9FAFF;
   width: 100%;
-  min-width: 320px;
+  min-width: 351px;
   margin: auto;
 }
 
@@ -598,8 +611,54 @@ main .search {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding-top: 48px;
-  padding-bottom: 48px;
+  padding-bottom: 16px;
+}
+
+@media (min-width: 900px) {
+  main .search {
+    padding-top: 72px;
+    padding-bottom: 32px;
+  }
+}
+
+main .search__form {
+  position: relative;
+  color: #ABABC0;
+}
+
+main .search__form .search__field {
+  width: 262px;
+  opacity: 0.65;
+  outline: 0;
+  border-color: #E1E1EE;
+  border-width: 0 0 1px;
+  background: transparent;
+  font-family: GoogleSansRegular;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 24px;
+  padding-bottom: 5px;
+  text-indent: 28px;
+}
+
+@media (max-width: 1100px) {
+  main .search__form .search__field {
+    display: none;
+  }
+}
+
+@media (min-width: 1100px) {
+  main .search__form svg {
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+  }
 }
 
 main .search__count {
@@ -607,6 +666,13 @@ main .search__count {
   font-weight: bold;
   letter-spacing: 0;
   line-height: 20px;
+}
+
+@media (min-width: 640px) {
+  main .search__count {
+    font-size: 24px;
+    line-height: 30px;
+  }
 }
 
 main .search img {
@@ -647,7 +713,6 @@ main .companies-container {
 
 main .company-card {
   height: 322px;
-  width: 262px;
   border-radius: 4px;
   background-color: #FFFFFF;
   -webkit-box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.1);
@@ -664,7 +729,7 @@ main .company-card {
 
 @media (max-width: 39.9375em) {
   main .company-card {
-    width: 327px;
+    width: 100%;
     height: 178px;
   }
 }
@@ -672,11 +737,11 @@ main .company-card {
 main .company-card img {
   -o-object-fit: cover;
      object-fit: cover;
+  width: 100%;
 }
 
 main .company-card .cover-image {
   height: 140px;
-  width: 262px;
 }
 
 @media (max-width: 39.9375em) {

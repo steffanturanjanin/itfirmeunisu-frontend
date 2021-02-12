@@ -1,13 +1,18 @@
 footer {
     width: 100%;
-    min-width: 280px;
-    height: 501px;
+    min-width: 351px;
+    height: 485px;
     background-color: $primary-color;
     background-image: url(/dist/images/symbols/symbols.svg);
     background-repeat: no-repeat;
-    background-position: 0;
+    background-position: right;
     position: relative;
     color: set-color($primary-color);
+
+
+    @media(min-width: 900px) {
+        height: 501px;
+    }
 
     .footer-content {
         width: 100%;
