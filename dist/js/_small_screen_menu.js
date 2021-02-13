@@ -22,7 +22,7 @@ export const toggleHamburger = () => {
                 navMenu.classList.remove('close'); 
             }, 1000);
 
-           document.body.style.overflow = 'scroll';
+           //document.body.style.overflow = 'scroll';
         } else {
 
             btnHamburgerClose.classList.add('visible', 'fade-in');
@@ -33,7 +33,8 @@ export const toggleHamburger = () => {
             navMenu.classList.remove('close');
             navMenu.classList.add('open');
 
-           document.body.style.overflow = 'hidden';
+           //document.body.style.overflow = 'hidden';
+        
         }
     })
 }    

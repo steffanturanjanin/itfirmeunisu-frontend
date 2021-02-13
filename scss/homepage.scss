@@ -21,6 +21,14 @@
     position: relative;
     color: set-color($primary-color);
 
+    @media screen and (min-width: 860px) {
+
+        background-image: url(/dist/images/nis-fortress-ilustration/nis-ilustracija.svg), url(/dist/images/nis-pattern-ilustration/nis-ilustracija-02.svg);
+        background-position: 850px calc(100% - 24px), -330px calc(100% - 24px);
+        background-repeat: no-repeat no-repeat;
+        
+    }
+
     &__text {
         width: 84%;
         position: absolute;
