@@ -6,20 +6,21 @@ const subMenus = Array.from(document.getElementsByClassName('submenu'));
 
 export const toggleHamburger = () => {
     btnHumburger.addEventListener('click', () => {
-        const navMenu = document.querySelector(".nav__menu");
+        const header = document.getElementsByTagName('header')[0];
 
-        if (navMenu.classList.contains('open')) {
+        if (header.classList.contains('open')) {
 
             btnHamburgerClose.classList.add('invisible');
             btnHamburgerClose.classList.remove('visible', 'fade-in');
             btnHamburgerOpen.classList.add('visible', 'fade-in');
             btnHamburgerOpen.classList.remove('invisible');
 
-            navMenu.classList.add('close');       
-            navMenu.classList.remove('open');
+            header.classList.add('close');       
+            header.classList.remove('open');
+            header.classList.remove('fix-header');
 
             setTimeout(() => {
-                navMenu.classList.remove('close'); 
+                header.classList.remove('close'); 
             }, 1000);
 
            //document.body.style.overflow = 'scroll';
@@ -30,8 +31,9 @@ export const toggleHamburger = () => {
             btnHamburgerOpen.classList.add('invisible');
             btnHamburgerOpen.classList.remove('visible', 'fade-in');
 
-            navMenu.classList.remove('close');
-            navMenu.classList.add('open');
+            header.classList.remove('close');
+            header.classList.add('open');
+            header.classList.add('fix-header');
 
            //document.body.style.overflow = 'hidden';
         

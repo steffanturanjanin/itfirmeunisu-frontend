@@ -25,7 +25,7 @@
 
         background-image: url(/dist/images/nis-fortress-ilustration/nis-ilustracija.svg), url(/dist/images/nis-pattern-ilustration/nis-ilustracija-02.svg);
         background-position: 850px calc(100% - 24px), -330px calc(100% - 24px);
-        background-repeat: no-repeat no-repeat;
+        background-repeat: no-repeat repeat-x;
         
     }
 
@@ -82,7 +82,7 @@ main {
         padding-top: 48px;
         padding-bottom: 16px;
 
-        @media(min-width:900px) {
+        @media(min-width:860px) {
             padding-top: 72px;
             padding-bottom: 32px;
         }
@@ -105,7 +105,7 @@ main {
                 padding-bottom: 5px;
                 text-indent: 28px;
 
-                @media(max-width: 1100px) {
+                @media(max-width: 860px) {
                     display: none;
                 }
 
@@ -118,7 +118,7 @@ main {
                 // left: 0;
                 // bottom: 10px;
 
-               @media(min-width: 1100px) {
+               @media(min-width: 860px) {
                     width: 16px;
                     height: 16px;
                     position: absolute;
@@ -143,7 +143,7 @@ main {
 
         &__count {
 
-            @media (min-width: 640px) {
+            @media (min-width: 860px) {
                 font-size: 24px;
                 line-height: 30px;
             }

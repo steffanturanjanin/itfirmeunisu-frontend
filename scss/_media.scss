@@ -20,3 +20,19 @@ $breakpoints-down: ("small": "39.9375em", "medium": "63.9375em", "large": "87.43
     @content;
 }
 }
+
+
+$breaking-points: ("screen-xsm": 360px, "screen-sm": 860px, "screen-md": 1100px, "screen-lg": 1300px);
+
+@mixin screen-up($size) {
+    @media (min-width: map-get($breaking-points, $size)) {
+        @content;
+    }
+}
+
+
+@mixin screen-down($size) {
+    @media (max-width: map-get($breaking-points, $size)) {
+        @content;
+    }
+}
