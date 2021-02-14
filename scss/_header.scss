@@ -42,9 +42,6 @@ header {
                     padding: 0;
                     display: flex;
 
-                    &.select {                           
-                        color: lighten($color: $primary-color, $amount: 18);                           
-                    }
                 }
             }
         }
@@ -93,10 +90,6 @@ header {
                     text-decoration: initial;
                     padding-left: 16px;
                     padding-right: 16px;
-
-                    &.select {                           
-                        color: lighten($color: $primary-color, $amount: 18);                           
-                    }
                 }
             }
         }
@@ -169,14 +162,16 @@ header {
         display: inline-block;
         padding: 16px 0 8px 0;
 
-        .select {
+        &.active {
             color:white;
-            
+
+            &:after {
+                width: 100%;
+            }
         }
 
         &:hover {
             color: white;
-    
         }
     }
 
