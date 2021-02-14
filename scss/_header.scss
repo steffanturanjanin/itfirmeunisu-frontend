@@ -175,20 +175,26 @@ header {
         }
     }
 
-    .nav__item:after {
-        transition: all ease-in-out .2s;
-        background: none repeat scroll 0 0 $primary-color-light;
-        content: "";
-        display: block;
-        height: 2px;
-        margin-top: 8px;
-        width: 0;
+
+    @include screen-up(screen-sm) {
+
+        .nav__item:after {
+            transition: all ease-in-out .2s;
+            background: none repeat scroll 0 0 $primary-color-light;
+            content: "";
+            display: block;
+            height: 2px;
+            margin-top: 8px;
+            width: 0;
+        }
+
+        .nav__item:hover:after {
+
+            width: 100%;
+        }
     }
     
-    .nav__item:hover:after {
-
-        width: 100%;
-    }
+    
 
     @include screen-down(screen-sm) {
         position: fixed;
