@@ -1,4 +1,3 @@
-@import "include-media";
 @import "media";
 
 $primary-color: #14163A;
@@ -30,7 +29,6 @@ $black: #000000;
       font-weight: bold;
       letter-spacing: 0;
       line-height: 46px;
-      text-align: center;
     }
 
     h2 {
@@ -40,7 +38,22 @@ $black: #000000;
       line-height: 41px;
     }
 
-    @include breakpoint-up(medium) {
+    @include screen-up(screen-sm) {
+      h1 {
+        font-size: 52px;
+        letter-spacing: 0;
+        line-height: 61px;
+      }
+  
+      h2 {
+        font-size: 42px;
+        font-weight: bold;
+        letter-spacing: 0;
+        line-height: 41px;
+      }
+    }
+
+    @include screen-up(screen-lg) {
       h1 {
         font-size: 64px;
         letter-spacing: 0;

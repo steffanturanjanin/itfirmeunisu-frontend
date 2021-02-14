@@ -1,7 +1,7 @@
-import { toggleHamburger, toggleSubMenu } from "./_small_screen_menu.js";
+import { toggleHamburgerEventListener, toggleSubMenuEventListener } from "./_small_screen_menu.js";
 
-toggleHamburger();
-toggleSubMenu();
+toggleHamburgerEventListener();
+toggleSubMenuEventListener();
 
 
 const header = document.getElementsByTagName('header')[0];

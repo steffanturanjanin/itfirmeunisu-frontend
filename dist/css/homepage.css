@@ -22,7 +22,6 @@
   font-weight: bold;
   letter-spacing: 0;
   line-height: 46px;
-  text-align: center;
 }
 
 * h2 {
@@ -32,7 +31,21 @@
   line-height: 41px;
 }
 
-@media (min-width: 40em) {
+@media (min-width: 800px) {
+  * h1 {
+    font-size: 52px;
+    letter-spacing: 0;
+    line-height: 61px;
+  }
+  * h2 {
+    font-size: 42px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 41px;
+  }
+}
+
+@media (min-width: 1300px) {
   * h1 {
     font-size: 64px;
     letter-spacing: 0;
@@ -180,7 +193,7 @@ header.open .nav__menu {
           animation: fade-in 300ms ease-in-out forwards;
 }
 
-@media (max-width: 860px) {
+@media (max-width: 800px) {
   header.open .nav__container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -209,7 +222,7 @@ header.open .nav__menu {
   }
 }
 
-@media (max-width: 860px) {
+@media (max-width: 800px) {
   header.open .has-submenu {
     display: block;
   }
@@ -290,7 +303,7 @@ header.open .nav__menu {
   font-weight: bold;
 }
 
-@media (max-width: 860px) {
+@media (max-width: 800px) {
   .nav__container {
     display: none;
   }
@@ -324,13 +337,14 @@ header.open .nav__menu {
 }
 
 #btnHamburger {
-  width: 22px;
-  height: 22px;
+  display: none;
 }
 
-@media (min-width: 860px) {
+@media (max-width: 800px) {
   #btnHamburger {
-    display: none;
+    display: block;
+    width: 22px;
+    height: 22px;
   }
 }
 
@@ -362,7 +376,7 @@ header.open .nav__menu {
   width: 100%;
 }
 
-@media (max-width: 860px) {
+@media (max-width: 800px) {
   .nav__menu {
     position: fixed;
     top: 0;
@@ -383,18 +397,18 @@ header.open .nav__menu {
 footer {
   width: 100%;
   min-width: 351px;
-  height: 485px;
+  height: 501px;
   background-color: #14163A;
   background-image: url(/dist/images/symbols/symbols.svg);
   background-repeat: no-repeat;
-  background-position: right;
+  background-position: right 10% center;
   position: relative;
   color: #FFFFFF;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 800px) {
   footer {
-    height: 501px;
+    height: 485px;
   }
 }
 
@@ -583,7 +597,7 @@ footer h2 {
   color: #FFFFFF;
 }
 
-@media screen and (min-width: 860px) {
+@media (min-width: 800px) {
   .hero {
     background-image: url(/dist/images/nis-fortress-ilustration/nis-ilustracija.svg), url(/dist/images/nis-pattern-ilustration/nis-ilustracija-02.svg);
     background-position: 850px calc(100% - 24px), -330px calc(100% - 24px);
@@ -600,7 +614,7 @@ footer h2 {
           transform: translate(-50%, -50%);
 }
 
-@media screen and (min-width: 860px) {
+@media (min-width: 800px) {
   .hero {
     height: 478px;
   }
@@ -635,7 +649,7 @@ main .search {
   padding-bottom: 16px;
 }
 
-@media (min-width: 860px) {
+@media (min-width: 800px) {
   main .search {
     padding-top: 72px;
     padding-bottom: 32px;
@@ -648,27 +662,28 @@ main .search__form {
 }
 
 main .search__form .search__field {
-  width: 262px;
-  opacity: 0.65;
-  outline: 0;
-  border-color: #E1E1EE;
-  border-width: 0 0 1px;
-  background: transparent;
-  font-family: GoogleSansRegular;
-  font-size: 16px;
-  letter-spacing: 0;
-  line-height: 24px;
-  padding-bottom: 5px;
-  text-indent: 28px;
+  display: none;
 }
 
-@media (max-width: 860px) {
+@media (min-width: 800px) {
   main .search__form .search__field {
-    display: none;
+    display: block;
+    width: 262px;
+    opacity: 0.65;
+    outline: 0;
+    border-color: #E1E1EE;
+    border-width: 0 0 1px;
+    background: transparent;
+    font-family: GoogleSansRegular;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 24px;
+    padding-bottom: 5px;
+    text-indent: 28px;
   }
 }
 
-@media (min-width: 860px) {
+@media (min-width: 800px) {
   main .search__form svg {
     width: 16px;
     height: 16px;
@@ -685,7 +700,7 @@ main .search__count {
   line-height: 20px;
 }
 
-@media (min-width: 860px) {
+@media (min-width: 800px) {
   main .search__count {
     font-size: 24px;
     line-height: 30px;
@@ -703,33 +718,34 @@ main .companies-container {
   display: grid;
   grid-gap: 30px;
   justify-items: center;
-  -ms-grid-columns: 1fr 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
 }
 
-@media (max-width: 1300px) {
-  main .companies-container {
-    -ms-grid-columns: 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr;
-  }
-}
-
-@media (max-width: 900px) {
+@media (min-width: 600px) {
   main .companies-container {
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
   }
 }
 
-@media (max-width: 630px) {
+@media (min-width: 800px) {
   main .companies-container {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width: 1100px) {
+  main .companies-container {
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
 
 main .company-card {
-  height: 322px;
+  width: 100%;
+  height: auto;
   border-radius: 4px;
   background-color: #FFFFFF;
   -webkit-box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.1);
@@ -744,13 +760,6 @@ main .company-card {
           flex-direction: column;
 }
 
-@media (max-width: 39.9375em) {
-  main .company-card {
-    width: 100%;
-    height: 178px;
-  }
-}
-
 main .company-card img {
   -o-object-fit: cover;
      object-fit: cover;
@@ -758,12 +767,13 @@ main .company-card img {
 }
 
 main .company-card .cover-image {
-  height: 140px;
+  display: none;
 }
 
-@media (max-width: 39.9375em) {
+@media (min-width: 800px) {
   main .company-card .cover-image {
-    display: none;
+    display: block;
+    height: 140px;
   }
 }
 
@@ -777,15 +787,19 @@ main .company-card .company-info {
           align-items: center;
 }
 
-@media (min-width: 40em) {
+@media (min-width: 800px) {
   main .company-card .company-info {
     padding: 32px 24px 24px 24px;
   }
 }
 
-@media (max-width: 39.9375em) {
+main .company-card .company-info__text {
+  padding-left: 16px;
+}
+
+@media (min-width: 800px) {
   main .company-card .company-info__text {
-    padding-left: 16px;
+    padding-left: 0px;
   }
 }
 
@@ -797,7 +811,7 @@ main .company-card .company-info .logo-image {
   background-color: #FFFFFF;
 }
 
-@media (min-width: 40em) {
+@media (min-width: 800px) {
   main .company-card .company-info .logo-image {
     position: absolute;
     top: 96px;
@@ -813,7 +827,14 @@ main .company-card .company-info h4 {
   line-height: 23px;
 }
 
-@media (min-width: 40em) {
+@media (min-width: 800px) {
+  main .company-card .company-info h4 {
+    font-size: 22px;
+    line-height: 28px;
+  }
+}
+
+@media (min-width: 1300px) {
   main .company-card .company-info h4 {
     font-size: 24px;
     line-height: 30px;
@@ -830,7 +851,7 @@ main .company-card .company-info a {
 }
 
 main .company-card .tag-container {
-  padding: 0px 23px 0px 24px;
+  padding: 0px 23px 24px 24px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -865,24 +886,20 @@ main .company-card .tag-container .tag {
   padding-bottom: 64px;
   position: relative;
   max-height: 1200px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 @media (min-width: 1100px) {
   .coworking {
     padding-top: 0;
     padding-bottom: 0;
-  }
-}
-
-@media (max-width: 1100px) {
-  .coworking {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
+    -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 }
 
@@ -890,7 +907,7 @@ main .company-card .tag-container .tag {
   min-width: 300px;
   -o-object-fit: contain;
      object-fit: contain;
-  max-width: 100%;
+  max-width: 500px;
   height: auto;
   text-align: center;
   margin-top: 48px;
@@ -935,7 +952,7 @@ main .company-card .tag-container .tag {
   line-height: 24px;
 }
 
-@media (min-width: 40em) {
+@media (min-width: 800px) {
   .coworking__text article {
     font-size: 18px;
     letter-spacing: 0;

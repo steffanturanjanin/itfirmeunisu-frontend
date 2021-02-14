@@ -1,9 +1,8 @@
 @import 'config';
-@import 'header2';
+@import 'header';
 @import 'footer';
 @import 'button';
 @import 'pagination';
-@import 'include-media';
 @import 'media';
 
 .hero {
@@ -15,13 +14,10 @@
     width: 100%;
     min-width: 351px;
     height: 400px;
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
     position: relative;
     color: set-color($primary-color);
 
-    @media screen and (min-width: 860px) {
+    @include screen-up(screen-sm) {
 
         background-image: url(/dist/images/nis-fortress-ilustration/nis-ilustracija.svg), url(/dist/images/nis-pattern-ilustration/nis-ilustracija-02.svg);
         background-position: 850px calc(100% - 24px), -330px calc(100% - 24px);
@@ -38,7 +34,7 @@
         transform: translate(-50%, -50%);
     }
 
-    @media screen and (min-width: 860px) {
+    @include screen-up(screen-sm)  {
         height: 478px;
     }
 
@@ -82,7 +78,7 @@ main {
         padding-top: 48px;
         padding-bottom: 16px;
 
-        @media(min-width:860px) {
+        @include screen-up(screen-sm) {
             padding-top: 72px;
             padding-bottom: 32px;
         }
@@ -92,23 +88,23 @@ main {
             color: #ABABC0;
 
             .search__field {
-                width: 262px;
-                opacity: 0.65;
-                outline: 0;
-                border-color: #E1E1EE;
-                border-width: 0 0 1px;
-                background: transparent;
-                font-family: GoogleSansRegular;
-                font-size: 16px;
-                letter-spacing: 0;
-                line-height: 24px;
-                padding-bottom: 5px;
-                text-indent: 28px;
+                display: none;
 
-                @media(max-width: 860px) {
-                    display: none;
+                @include screen-up(screen-sm)  {
+                    display: block;
+                    width: 262px;
+                    opacity: 0.65;
+                    outline: 0;
+                    border-color: #E1E1EE;
+                    border-width: 0 0 1px;
+                    background: transparent;
+                    font-family: GoogleSansRegular;
+                    font-size: 16px;
+                    letter-spacing: 0;
+                    line-height: 24px;
+                    padding-bottom: 5px;
+                    text-indent: 28px;
                 }
-
             }
 
             svg {
@@ -118,7 +114,7 @@ main {
                 // left: 0;
                 // bottom: 10px;
 
-               @media(min-width: 860px) {
+                @include screen-up(screen-sm) {
                     width: 16px;
                     height: 16px;
                     position: absolute;
@@ -128,22 +124,9 @@ main {
             }
         }
 
-        // &__field {
-        //     opacity: 0.65;
-        //     outline: 0;
-        //     border-width: 0 0 1px;
-        //     background: transparent;
-        //     font-family: GoogleSansRegular;
-        //     font-size: 16px;
-        //     letter-spacing: 0;
-        //     line-height: 24px;
-        //     color: #ABABC0;
-        //     padding-bottom: 5px;
-        // }
-
         &__count {
 
-            @media (min-width: 860px) {
+            @include screen-up(screen-sm) {
                 font-size: 24px;
                 line-height: 30px;
             }
@@ -165,34 +148,39 @@ main {
         display: grid;
         grid-gap: 30px;
         justify-items: center;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        // grid-template-rows: 1fr 1fr 1fr 1fr;
+        // grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
 
-        @media(max-width: 1300px) {
-            grid-template-columns: 1fr 1fr 1fr;
-            //padding: 3rem 1rem;
-        }
-
-        @media(max-width: 900px) {
+        @media(min-width: 600px) {
             grid-template-columns: 1fr 1fr;
-            //padding: 3rem 1rem;
         }
 
-        @media(max-width: 630px) {
-            grid-template-columns: 1fr;
-            //padding: 3rem 1rem;
+        @media(min-width: 800px) {
+            grid-template-columns: 1fr 1fr 1fr;
         }
+
+        @media(min-width: 1100px) {
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+
+
+        // @media(max-width: 1100px) {
+        //     grid-template-columns: 1fr 1fr 1fr;   
+        // }
+
+        // @media(max-width: 800px) {
+        //     grid-template-columns: 1fr 1fr;    
+        // }
+
+        // @media(max-width: 600px) {
+        //     grid-template-columns: 1fr;
+        // }
     }
 
     .company-card {
 
-        @include breakpoint-down(small) {
-            width: 100%;
-            height: 178px;
-        }
-
-        height: 322px;
-        //width: 262px;
+        width: 100%;
+        height: auto;
         border-radius: 4px;
         background-color: $white;
         box-shadow: 0 2px 6px 0 rgba(0,0,0,0.1);
@@ -200,34 +188,38 @@ main {
         display: flex;
         flex-direction: column;
 
+
         img {
             object-fit: cover;
             width: 100%;
-        }
+        }   
+
 
         .cover-image {
-            height: 140px;
-            //width: 262px;
-
-
-            @include breakpoint-down(small) {
-                display: none;
+            display: none;
+            
+            @include screen-up(screen-sm) {
+                display: block;
+                height: 140px;
             }
         }
+        
 
         .company-info {
             padding: 24px 24px 20px 24px;
             display: flex;
             align-items: center;
 
-            @include breakpoint-up(medium) {
+            @include screen-up(screen-sm) {
                 padding: 32px 24px 24px 24px;
             }
             
 
             &__text {
-                @include breakpoint-down(small) {
-                    padding-left: 16px;
+                padding-left: 16px;
+                
+                @include screen-up(screen-sm) {
+                    padding-left: 0px;
                 }
             }
 
@@ -238,7 +230,7 @@ main {
                 border: 2px solid #EBEBEB;
                 background-color: #FFFFFF;
 
-                @include breakpoint-up(medium) {
+                @include screen-up(screen-sm) {
                     position: absolute;
                     top: 96px;
                     left: 24px;
@@ -252,7 +244,12 @@ main {
                 letter-spacing: 0;
                 line-height: 23px;
 
-                @include breakpoint-up(medium) {
+                @include screen-up(screen-sm) {
+                    font-size: 22px;
+                    line-height: 28px;
+                }
+
+                @include screen-up(screen-lg) {
                     font-size: 24px;
                     line-height: 30px;
                 }
@@ -269,7 +266,7 @@ main {
         }
 
         .tag-container {
-            padding: 0px 23px 0px 24px;
+            padding: 0px 23px 24px 24px;
             display: flex;
             flex-wrap: wrap;
             row-gap: 4px;
@@ -298,57 +295,29 @@ main {
     padding-bottom: 64px;
     position: relative;
     max-height: 1200px;
+    flex-direction: column;
 
-    // @include breakpoint-up(medium) {
-    //     padding-top: 0;
-    //     padding-bottom: 0;
-    // }
-    
-    @media(min-width: 1100px) {
+    @include screen-up(screen-md) {
         padding-top: 0;
         padding-bottom: 0;
-    }
-
-    @media(max-width: 1100px) {
-        display: flex;
-        flex-direction: column;
+        flex-direction: row;
     }
 
     &__img {
-        // position: absolute;
-        // top: 165px;
-        // right: 0;
-        // z-index: 1;
         min-width: 300px;
         object-fit: contain; 
-        max-width: 100%;
+        max-width: 500px;
         height: auto;
         text-align: center;
         margin-top: 48px;
 
-        @media(min-width: 1100px) {
+        @include screen-up(screen-md) {
             position: absolute;
             margin-top: 0 !important;
             top: 165px;
             right: 24px;
             z-index: 1;
         }
-
-        // @include breakpoint-up(medium) {
-        //     position: absolute;
-        //     margin-top: 0 !important;
-        //     top: 165px;
-        //     right: 24px;
-        //     z-index: 1;
-        // }
-
-        // @media(max-width: 1300px) {
-        //     text-align:center; 
-        //     margin-top: 48px;
-        //     position: static !important;
-        //     top: 0 !important;
-        //     right: 0 !important;
-        // }
     }
 
     &__text {
@@ -357,11 +326,7 @@ main {
         max-width: 640px;
         min-width: 280px;
 
-        // @include breakpoint-up(medium) {
-        //     padding: 120px 6px 120px 0px;
-        // }
-
-        @media(min-width: 1100px) {
+        @include screen-up(screen-md) {
             padding: 120px 6px 120px 0px;
         }
 
@@ -375,7 +340,7 @@ main {
             letter-spacing: 0;
             line-height: 24px;
 
-            @include breakpoint-up(medium) {
+            @include screen-up(screen-sm) {
                 font-size: 18px;
                 letter-spacing: 0;
                 line-height: 28px;
