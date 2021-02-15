@@ -2,6 +2,7 @@
 
 $primary-color: #14163A;
 $primary-color-light: #5D6BF6;
+$primary-color-dark: #0C0E2E;
 $white: #FFFFFF;
 $ghost-white: #F9FAFF;
 $black: #000000;
@@ -22,7 +23,7 @@ $black: #000000;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'GoogleSansBold', 'GoogleSansRegular';
+    font-family: 'GoogleSansRegular', 'GoogleSansBold',;
 
     h1 {
       font-size: 36px;
