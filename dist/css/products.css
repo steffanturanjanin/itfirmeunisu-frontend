@@ -14,7 +14,7 @@
           box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'GoogleSansBold', 'GoogleSansRegular';
+  font-family: "GoogleSansRegular", "GoogleSansBold";
 }
 
 * h1 {
@@ -395,9 +395,9 @@ header.open .nav__menu {
 
 footer {
   width: 100%;
-  min-width: 351px;
+  min-width: 360px;
   height: 501px;
-  background-color: #14163A;
+  background-color: #0C0E2E;
   background-image: url(/dist/images/symbols/symbols.svg);
   background-repeat: no-repeat;
   background-position: right 10% center;
