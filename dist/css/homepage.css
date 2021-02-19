@@ -398,11 +398,31 @@ footer {
   min-width: 360px;
   height: 501px;
   background-color: #0C0E2E;
-  background-image: url(/dist/images/symbols/symbols.svg);
-  background-repeat: no-repeat;
-  background-position: right 10% center;
   position: relative;
   color: #FFFFFF;
+  overflow: hidden;
+}
+
+footer::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: calc(100% + 60px);
+  left: 380px;
+  top: 60px;
+  z-index: 100;
+  background-image: url("/dist/images/symbols/symbols.svg");
+  background-repeat: repeat-x;
+  -webkit-transform: rotate(180deg) scaleX(-1);
+          transform: rotate(180deg) scaleX(-1);
+}
+
+@media (max-width: 600px) {
+  footer::before {
+    height: calc(100% + 55px);
+    top: 55px;
+    left: calc(50% - 80px);
+  }
 }
 
 @media (min-width: 800px) {

@@ -398,11 +398,31 @@ footer {
   min-width: 360px;
   height: 501px;
   background-color: #0C0E2E;
-  background-image: url(/dist/images/symbols/symbols.svg);
-  background-repeat: no-repeat;
-  background-position: right 10% center;
   position: relative;
   color: #FFFFFF;
+  overflow: hidden;
+}
+
+footer::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: calc(100% + 60px);
+  left: 380px;
+  top: 60px;
+  z-index: 100;
+  background-image: url("/dist/images/symbols/symbols.svg");
+  background-repeat: repeat-x;
+  -webkit-transform: rotate(180deg) scaleX(-1);
+          transform: rotate(180deg) scaleX(-1);
+}
+
+@media (max-width: 600px) {
+  footer::before {
+    height: calc(100% + 55px);
+    top: 55px;
+    left: calc(50% - 80px);
+  }
 }
 
 @media (min-width: 800px) {
@@ -499,6 +519,13 @@ footer h2 {
   line-height: 28px;
 }
 
+body {
+  background-color: #14163A;
+  background-image: url("/dist/images/symbols/symbols.svg");
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+
 h2 {
   font-family: "GoogleSansRegular";
   font-size: 40px;
@@ -523,12 +550,8 @@ h2 {
 
 .hero {
   position: relative;
-  height: 536px;
+  height: 493px;
   min-width: 360px;
-  background-color: #14163A;
-  background-image: url("/dist/images/symbols/symbols.svg");
-  background-repeat: no-repeat;
-  background-position: right top;
   color: #FFFFFF;
 }
 
@@ -570,16 +593,10 @@ h2 {
 }
 
 main {
-  background-color: #14163A;
+  background-color: transparent;
   color: #FFFFFF;
   min-width: 360px;
   position: relative;
-}
-
-@media (max-width: 1100px) {
-  main {
-    overflow: hidden;
-  }
 }
 
 main::before {
@@ -594,6 +611,20 @@ main::before {
   background-repeat: no-repeat;
   -webkit-transform: rotate(90deg) scaleY(-1);
           transform: rotate(90deg) scaleY(-1);
+}
+
+@media (max-width: 1100px) {
+  main::before {
+    width: 550px;
+    height: 550px;
+  }
+}
+
+@media (max-width: 600px) {
+  main::before {
+    width: 300px;
+    height: 300px;
+  }
 }
 
 .coworking-section {
@@ -670,17 +701,6 @@ main::before {
       -ms-flex-pack: justify;
           justify-content: space-between;
   height: auto;
-}
-
-@media (min-width: 1100px) {
-  .coworking-section.stretched {
-    height: 520px;
-  }
-  .coworking-section.stretched img {
-    position: absolute;
-    right: 0;
-    top: -40px;
-  }
 }
 
 .coworking-section.centered {

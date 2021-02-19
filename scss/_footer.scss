@@ -5,15 +5,37 @@ footer {
     min-width: 360px;
     height: 501px;
     background-color: $primary-color-dark;
-    background-image: url(/dist/images/symbols/symbols.svg);
-    background-repeat: no-repeat;
-    background-position: right 10% center;
+    // background-image: url(/dist/images/symbols/symbols.svg);
+    // background-repeat: no-repeat;
+    // background-position: right 10% center;
     position: relative;
     color: set-color($primary-color);
 
+    overflow: hidden;
 
-    @include screen-up(screen-sm) {
+    &::before {  
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: calc(100% + 60px);
+
+        @media (max-width: 600px) {
+            height: calc(100% + 55px);
+            top: 55px;
+            left: calc(50% - 80px);
+        }
+
+        left: 380px;
+        top: 60px;
+        z-index: 100;
+        background-image: url("/dist/images/symbols/symbols.svg");
+        background-repeat: repeat-x;
         
+    
+        transform: rotate(180deg) scaleX(-1);
+    }
+
+    @include screen-up(screen-sm) {      
         height: 485px;
     }
 
