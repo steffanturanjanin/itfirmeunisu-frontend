@@ -180,7 +180,9 @@
 header {
   background-color: transparent;
   width: 100%;
-  min-width: 320px;
+  min-width: 360px;
+  /*!!!!*/
+  position: relative;
 }
 
 header.close .nav__menu {
