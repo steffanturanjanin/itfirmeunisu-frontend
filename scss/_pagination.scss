@@ -1,3 +1,13 @@
+.pagination-left, .pagination-right, .page {
+    cursor: pointer;
+    text-decoration: none;
+
+    &:hover {
+        color: darken($color: $primary-color-light, $amount: 50);
+        text-decoration: underline;
+    }
+}
+
 .pagination {
     width: 100%;
     display: flex;

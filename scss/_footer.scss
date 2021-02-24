@@ -10,10 +10,11 @@ footer {
     // background-position: right 10% center;
     position: relative;
     color: set-color($primary-color);
-
     overflow: hidden;
+    z-index: 0;
 
     &::before {  
+        z-index: 1;
         content: "";
         position: absolute;
         width: 100%;
@@ -30,8 +31,6 @@ footer {
         z-index: 100;
         background-image: url("/dist/images/symbols/symbols.svg");
         background-repeat: repeat-x;
-        
-    
         transform: rotate(180deg) scaleX(-1);
     }
 
@@ -40,6 +39,7 @@ footer {
     }
 
     .footer-content {
+        z-index: 2;
         width: 100%;
         height: 100%;
         padding-top: 72px;
@@ -47,11 +47,16 @@ footer {
         flex-direction: column;
         flex: 1;
 
+        h2, a {
+            z-index: 100;
+        }
+
         @include screen-up(screen-md) {
             padding-top: 120px;
         }
 
         .contact {
+            z-index: 1000;
             margin-top: auto;
             display:flex;
             flex-direction: column;
@@ -78,13 +83,13 @@ footer {
             }
 
             a {
-                height: 20px;
-                width: 62px;
                 color: #FFFFFF;
                 font-size: 16px;
                 font-weight: bold;
                 letter-spacing: 0;
                 line-height: 20px;
+                text-decoration: none;
+                cursor: pointer;
             }
         }
     }

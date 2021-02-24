@@ -45,6 +45,10 @@ export const toggleSubMenuEventListener = () => {
 
         const collapseSpreadArrow = hasSubMenuDiv.querySelector('svg');
 
+        if (collapseSpreadArrow == null) {
+            return;
+        }
+
         hasSubMenuDiv.addEventListener('click', () => {
             
             if (subMenu.classList.contains('spread')) {             

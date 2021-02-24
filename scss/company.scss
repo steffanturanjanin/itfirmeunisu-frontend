@@ -3,6 +3,7 @@
 @import "footer";
 @import "button";
 @import "products_grid";
+@import "tag";
 
 body {
     background-color: $primary-color;
@@ -125,33 +126,6 @@ body {
     }
 }
 
-.tag-container {
-    //padding: 0px 23px 24px 24px;
-    padding-top: 32px;
-    display: flex;
-    flex-wrap: wrap;
-    // row-gap: 4px;
-    // column-gap: 4px;
-    row-gap: 8px;
-    column-gap: 8px;
-
-    .tag  {
-        padding: 4px 6px 4px 6px;
-        //height: 23px;
-        // background-color: #F4F5F9;
-        background-color: #303251;
-        border-radius: 2px;
-        // color: #8B8B9F;
-        color: set-color(#303251);
-        // font-size: 12px;
-        font-size: 14px;
-        font-weight: bold;
-        letter-spacing: 0;
-        // line-height: 16px;
-        line-height: 18px;
-    }
-}
-
 .company-social-media {
     display: flex;
 
@@ -160,7 +134,7 @@ body {
     }
 
 
-    svg {
+    &__link {
         height: 18px;
         width: 18px;
 
@@ -279,6 +253,7 @@ main {
     width: 100%;
 
     @media (max-width: 1100px) {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 
     @media (max-width: 800px) {

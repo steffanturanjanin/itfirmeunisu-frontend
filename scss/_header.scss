@@ -1,5 +1,6 @@
 @import 'animations';
 @import 'media';
+@import 'submenu';
 
 .fix-header {
         position: fixed;
@@ -10,8 +11,6 @@ header {
     background-color: transparent;
     width: 100%;
     min-width: 360px;
-
-    /*!!!!*/
     position: relative;
 
     &.close {
@@ -44,59 +43,10 @@ header {
                     margin: 0 0 16px 0;
                     padding: 0;
                     display: flex;
-
-                }
+                    align-items: flex-start;
+                }       
             }
         }
-
-        .has-submenu {
-            @include screen-down(screen-sm) {
-                display: block;
-
-                &__container {
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
-                    margin-bottom: 16px;
-                }
-
-                .nav__item {
-                    padding-bottom: 0;
-                    margin-bottom: 0;
-                }
-
-                .submenu {
-                    flex-direction: column;
-                    padding-bottom: 24px;
-
-                    :not(:last-child) {
-                        padding-bottom: 16px;
-                    }
-
-                    &.spread {
-                        display: flex;
-                        animation: fade-in 300ms ease-in-out forwards; 
-                    }
-
-                    &.collapsed {
-                        display: none; 
-                    }
-                }
-
-                .submenu__item {
-                    font-size: 16px;
-                    color: white;
-                    opacity: 0.65;
-                    font-weight: bold;
-                    letter-spacing: 0;
-                    line-height: 20px;
-                    text-decoration: initial;
-                    padding-left: 16px;
-                    padding-right: 16px;
-                }
-            }
-        }
-
     }
 }
 
@@ -122,12 +72,15 @@ header {
 
     &__item {
         margin-left: 32px;
-        font-size: 17px;
+        font-size: 15px;
         font-weight: bold;
         letter-spacing: 0;
         line-height: 21px;
+    }
+
+    &__item-link {
         color: inherit;
-        text-decoration: inherit;
+        text-decoration: none;
     }
 
 }
@@ -159,29 +112,31 @@ header {
 }
 
 
-.nav__menu {
+.nav__item {
+    padding: 16px 0 8px 0;
 
-    .nav__item {
-        display: inline-block;
-        padding: 16px 0 8px 0;
+    &.active {
+        color:white;
 
-        &.active {
-            color:white;
-
-            &:after {
-                width: 100%;
-            }
+        .nav__item-link::after {
+            width: 100%;
         }
 
-        &:hover {
-            color: white;
-        }
+        // &:after {
+        //     width: 100%;
+        // }
     }
 
+    &:hover {
+        color: white;
+    }
+}
 
+.nav__menu {
     @include screen-up(screen-sm) {
+        position: relative;
 
-        .nav__item:after {
+        .nav__item-link:after {
             transition: all ease-in-out .2s;
             background: none repeat scroll 0 0 $primary-color-light;
             content: "";
@@ -191,14 +146,12 @@ header {
             width: 0;
         }
 
-        .nav__item:hover:after {
-
+        .nav__item-link:hover:after {
             width: 100%;
         }
+
     }
     
-    
-
     @include screen-down(screen-sm) {
         position: fixed;
         top: 0;
@@ -211,9 +164,5 @@ header {
         overflow: auto;   
         background-color: $primary-color-light;      
     }       
-
-    .has-submenu {
-        display: none;
-    }
-
 }
+
