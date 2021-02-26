@@ -1,21 +1,26 @@
-.tag-container:after {
-    display: none;
-}
-
-.tag-container:before {
-    display: none;
-}
-
 .tag-container {
     display: flex;
     flex-wrap: wrap;
 
+    // &.sm {
+    //     row-gap: 4px;
+    //     column-gap: 4px;
+    //     padding: 0px 23px 24px 24px;
+
+    //     .tag {
+    //         padding: 4px 6px 4px 6px;
+    //         font-size: 12px;
+    //         font-weight: bold;
+    //         line-height: 16px;
+    //     }
+    // }
+
+
     &.sm {
-        row-gap: 4px;
-        column-gap: 4px;
-        padding: 0px 23px 24px 24px;
+        padding: 0px 21px 22px 22px;
 
         .tag {
+            margin: 2px;
             padding: 4px 6px 4px 6px;
             font-size: 12px;
             font-weight: bold;
@@ -24,11 +29,13 @@
     }
 
     &.md {
-        row-gap: 8px;
-        column-gap: 8px;
+        // row-gap: 8px;
+        // column-gap: 8px;
         padding-top: 32px;
+        margin: -4px;
 
         .tag {
+            margin: 4px;
             padding: 4px 6px 4px 6px;
             font-size: 14px;
             font-weight: bold;
@@ -37,19 +44,40 @@
     }
 
     &.lg {
-        row-gap: 24px;
-        column-gap: 16px;
-        padding-top: 32px;
-        padding-bottom: 120px;
+        // row-gap: 24px;
+        // column-gap: 16px;
+        margin: 0px -8px 0px -8px;
+        padding-top: 24px;
+        padding-bottom: 112px;
+
+        .tag {
+            margin: 12px 8px 12px 8px;
+        }
 
         @media (max-width: 1100px) {
-            column-gap: 12px;
-            row-gap: 16px;
+            // column-gap: 12px;
+            // row-gap: 16px;
+
+            margin: 0px -6px 0px -6px;
+            padding-top: 26px;
+            padding-bottom: 118px;
+
+            .tag {
+                margin: 8px 6px 8px 6px;
+            }
         }
 
         @media (max-width: 600px) {
-            column-gap: 8px;
-            row-gap: 12px;
+            // column-gap: 8px;
+            // row-gap: 12px;
+
+            margin: 0px -4px -6px 0px;
+            padding-top: 28px;
+            padding-bottom: 120px;
+
+            .tag {
+                margin: 6px 4px 6px 4px;
+            }
         }
     }
 }

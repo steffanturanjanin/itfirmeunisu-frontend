@@ -32,6 +32,10 @@ body {
   font-family: 'GoogleSansRegular';
 }
 
+a {
+  text-decoration: none;
+}
+
 .container {
   width: 100%;
   max-width: 1188px;
@@ -559,8 +563,9 @@ footer h2 {
   color: #FFFFFF;
   font-weight: bold;
   font-size: 16px;
-  height: 46px;
-  width: 200px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   border-radius: 4px;
   background-color: #5D6BF6;
   padding: 9px 57px 9px 58px;
@@ -597,6 +602,10 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'GoogleSansRegular';
+}
+
+a {
+  text-decoration: none;
 }
 
 .container {
@@ -650,6 +659,10 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'GoogleSansRegular';
+}
+
+a {
+  text-decoration: none;
 }
 
 .container {

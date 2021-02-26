@@ -31,6 +31,10 @@ body {
   font-family: 'GoogleSansRegular';
 }
 
+a {
+  text-decoration: none;
+}
+
 .container {
   width: 100%;
   max-width: 1188px;
@@ -558,21 +562,14 @@ footer h2 {
   color: #FFFFFF;
   font-weight: bold;
   font-size: 16px;
-  height: 46px;
-  width: 200px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   border-radius: 4px;
   background-color: #5D6BF6;
   padding: 9px 57px 9px 58px;
   line-height: 28px;
   cursor: pointer;
-}
-
-.tag-container:after {
-  display: none;
-}
-
-.tag-container:before {
-  display: none;
 }
 
 .tag-container {
@@ -584,13 +581,11 @@ footer h2 {
 }
 
 .tag-container.sm {
-  row-gap: 4px;
-  -webkit-column-gap: 4px;
-          column-gap: 4px;
-  padding: 0px 23px 24px 24px;
+  padding: 0px 21px 22px 22px;
 }
 
 .tag-container.sm .tag {
+  margin: 2px;
   padding: 4px 6px 4px 6px;
   font-size: 12px;
   font-weight: bold;
@@ -598,13 +593,12 @@ footer h2 {
 }
 
 .tag-container.md {
-  row-gap: 8px;
-  -webkit-column-gap: 8px;
-          column-gap: 8px;
   padding-top: 32px;
+  margin: -4px;
 }
 
 .tag-container.md .tag {
+  margin: 4px;
   padding: 4px 6px 4px 6px;
   font-size: 14px;
   font-weight: bold;
@@ -612,26 +606,34 @@ footer h2 {
 }
 
 .tag-container.lg {
-  row-gap: 24px;
-  -webkit-column-gap: 16px;
-          column-gap: 16px;
-  padding-top: 32px;
-  padding-bottom: 120px;
+  margin: 0px -8px 0px -8px;
+  padding-top: 24px;
+  padding-bottom: 112px;
+}
+
+.tag-container.lg .tag {
+  margin: 12px 8px 12px 8px;
 }
 
 @media (max-width: 1100px) {
   .tag-container.lg {
-    -webkit-column-gap: 12px;
-            column-gap: 12px;
-    row-gap: 16px;
+    margin: 0px -6px 0px -6px;
+    padding-top: 26px;
+    padding-bottom: 118px;
+  }
+  .tag-container.lg .tag {
+    margin: 8px 6px 8px 6px;
   }
 }
 
 @media (max-width: 600px) {
   .tag-container.lg {
-    -webkit-column-gap: 8px;
-            column-gap: 8px;
-    row-gap: 12px;
+    margin: 0px -4px -6px 0px;
+    padding-top: 28px;
+    padding-bottom: 120px;
+  }
+  .tag-container.lg .tag {
+    margin: 6px 4px 6px 4px;
   }
 }
 
@@ -726,6 +728,10 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'GoogleSansRegular';
+}
+
+a {
+  text-decoration: none;
 }
 
 .container {
