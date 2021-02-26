@@ -2,9 +2,13 @@
 @import 'media';
 @import 'submenu';
 
-.fix-header {
-    position: fixed;
-    z-index: 1;
+header {
+    &.open {
+        @media (max-width: 800px) {
+            position: fixed;
+            z-index: 1;
+        }
+    }
 }
 
 header {

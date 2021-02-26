@@ -17,7 +17,8 @@ export const toggleHamburgerEventListener = () => {
 
             header.classList.add('close');       
             header.classList.remove('open');
-            header.classList.remove('fix-header');
+
+            document.body.style.overflow = 'auto';
 
             setTimeout(() => {
                 header.classList.remove('close'); 
@@ -30,9 +31,9 @@ export const toggleHamburgerEventListener = () => {
             btnHamburgerOpen.classList.remove('visible', 'fade-in');
 
             header.classList.remove('close');
-            header.classList.add('open');
-            header.classList.add('fix-header');
-        
+            header.classList.add('open');    
+
+            document.body.style.overflow = 'hidden';
         }
     })
 }    
