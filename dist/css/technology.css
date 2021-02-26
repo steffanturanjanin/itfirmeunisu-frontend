@@ -568,6 +568,14 @@ footer h2 {
   cursor: pointer;
 }
 
+.tag-container:after {
+  display: none;
+}
+
+.tag-container:before {
+  display: none;
+}
+
 .tag-container {
   display: -webkit-box;
   display: -ms-flexbox;

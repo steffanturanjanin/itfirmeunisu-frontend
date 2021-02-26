@@ -664,6 +664,14 @@ footer h2 {
   border: 1px solid #5D6BF6;
 }
 
+.tag-container:after {
+  display: none;
+}
+
+.tag-container:before {
+  display: none;
+}
+
 .tag-container {
   display: -webkit-box;
   display: -ms-flexbox;

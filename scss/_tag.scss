@@ -1,8 +1,15 @@
+.tag-container:after {
+    display: none;
+}
+
+.tag-container:before {
+    display: none;
+}
 
 .tag-container {
     display: flex;
     flex-wrap: wrap;
-    
+
     &.sm {
         row-gap: 4px;
         column-gap: 4px;
