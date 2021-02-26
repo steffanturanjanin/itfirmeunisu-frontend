@@ -1,7 +1,14 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
 @font-face {
   font-family: GoogleSansRegular;
   src: url(/dist/fonts/Google-Sans-Fonts/GoogleSans-Regular.ttf);
+}
+
+@font-face {
+  font-family: GoogleSansMedium;
+  src: url(/dist/fonts/Google-Sans-Fonts/GoogleSans-Medium.ttf);
 }
 
 @font-face {
@@ -9,54 +16,20 @@
   src: url(/dist/fonts/Google-Sans-Fonts/GoogleSans-Bold.ttf);
 }
 
+body {
+  background-color: #14163A;
+  width: 100%;
+  min-width: 360px;
+  position: relative;
+  z-index: 1;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "GoogleSansRegular", "GoogleSansBold";
-}
-
-* h1 {
-  font-size: 36px;
-  font-weight: bold;
-  letter-spacing: 0;
-  line-height: 46px;
-}
-
-* h2 {
-  font-size: 32px;
-  font-weight: bold;
-  letter-spacing: 0;
-  line-height: 41px;
-}
-
-@media (min-width: 800px) {
-  * h1 {
-    font-size: 52px;
-    letter-spacing: 0;
-    line-height: 61px;
-  }
-  * h2 {
-    font-size: 42px;
-    font-weight: bold;
-    letter-spacing: 0;
-    line-height: 41px;
-  }
-}
-
-@media (min-width: 1300px) {
-  * h1 {
-    font-size: 64px;
-    letter-spacing: 0;
-    line-height: 82px;
-  }
-  * h2 {
-    font-size: 48px;
-    font-weight: bold;
-    letter-spacing: 0;
-    line-height: 61px;
-  }
+  font-family: 'GoogleSansRegular';
 }
 
 .container {
@@ -189,8 +162,10 @@
   display: none;
 }
 
-.open .sumbenu-arrow {
-  display: block;
+@media (max-width: 800px) {
+  .sumbenu-arrow {
+    display: block;
+  }
 }
 
 .submenu-nav {
@@ -223,7 +198,7 @@
 }
 
 .submenu {
-  z-index: 5;
+  z-index: 1;
 }
 
 @media (min-width: 800px) {
@@ -302,6 +277,12 @@ header.close .nav__menu {
           animation: fade-out 300ms ease-in-out forwards;
 }
 
+@media (max-width: 800px) {
+  header.open #firme, header.open #nisu {
+    fill: #313785;
+  }
+}
+
 header.open .nav__menu {
   -webkit-animation: fade-in 300ms ease-in-out forwards;
           animation: fade-in 300ms ease-in-out forwards;
@@ -347,7 +328,7 @@ header.open .nav__menu {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  padding: 18px 0;
+  padding-top: 18px;
 }
 
 .nav__container {
@@ -372,12 +353,13 @@ header.open .nav__menu {
   font-size: 15px;
   font-weight: bold;
   letter-spacing: 0;
-  line-height: 21px;
+  line-height: 19px;
 }
 
 .nav__item-link {
   color: inherit;
   text-decoration: none;
+  font-family: 'GoogleSansBold';
 }
 
 .hamburger {
@@ -430,10 +412,10 @@ header.open .nav__menu {
     position: relative;
   }
   .nav__menu .nav__item-link:after {
+    content: "";
     -webkit-transition: all ease-in-out .2s;
     transition: all ease-in-out .2s;
     background: none repeat scroll 0 0 #5D6BF6;
-    content: "";
     display: block;
     height: 2px;
     margin-top: 8px;
@@ -466,18 +448,17 @@ footer {
   position: relative;
   color: #FFFFFF;
   overflow: hidden;
-  z-index: 0;
+  z-index: -2;
 }
 
 footer::before {
-  z-index: 1;
+  z-index: -1;
   content: "";
   position: absolute;
   width: 100%;
   height: calc(100% + 60px);
   left: 380px;
   top: 60px;
-  z-index: 100;
   background-image: url("/dist/images/symbols/symbols.svg");
   background-repeat: repeat-x;
   -webkit-transform: rotate(180deg) scaleX(-1);
@@ -499,7 +480,6 @@ footer::before {
 }
 
 footer .footer-content {
-  z-index: 2;
   width: 100%;
   height: 100%;
   padding-top: 72px;
@@ -515,10 +495,6 @@ footer .footer-content {
           flex: 1;
 }
 
-footer .footer-content h2, footer .footer-content a {
-  z-index: 100;
-}
-
 @media (min-width: 1100px) {
   footer .footer-content {
     padding-top: 120px;
@@ -526,7 +502,6 @@ footer .footer-content h2, footer .footer-content a {
 }
 
 footer .footer-content .contact {
-  z-index: 1000;
   margin-top: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -593,6 +568,241 @@ footer h2 {
   cursor: pointer;
 }
 
+@font-face {
+  font-family: GoogleSansRegular;
+  src: url(/dist/fonts/Google-Sans-Fonts/GoogleSans-Regular.ttf);
+}
+
+@font-face {
+  font-family: GoogleSansMedium;
+  src: url(/dist/fonts/Google-Sans-Fonts/GoogleSans-Medium.ttf);
+}
+
+@font-face {
+  font-family: GoogleSansBold;
+  src: url(/dist/fonts/Google-Sans-Fonts/GoogleSans-Bold.ttf);
+}
+
+body {
+  background-color: #14163A;
+  width: 100%;
+  min-width: 360px;
+  position: relative;
+  z-index: 1;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'GoogleSansRegular';
+}
+
+.container {
+  width: 100%;
+  max-width: 1188px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.link {
+  color: #5D6BF6;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 18px;
+  text-decoration: none;
+  font-family: 'GoogleSansBold';
+  cursor: pointer;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+@font-face {
+  font-family: GoogleSansRegular;
+  src: url(/dist/fonts/Google-Sans-Fonts/GoogleSans-Regular.ttf);
+}
+
+@font-face {
+  font-family: GoogleSansMedium;
+  src: url(/dist/fonts/Google-Sans-Fonts/GoogleSans-Medium.ttf);
+}
+
+@font-face {
+  font-family: GoogleSansBold;
+  src: url(/dist/fonts/Google-Sans-Fonts/GoogleSans-Bold.ttf);
+}
+
+body {
+  background-color: #14163A;
+  width: 100%;
+  min-width: 360px;
+  position: relative;
+  z-index: 1;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'GoogleSansRegular';
+}
+
+.container {
+  width: 100%;
+  max-width: 1188px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.font-ghost, .font-primary {
+  letter-spacing: 0;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.font-ghost {
+  color: #14163A;
+  opacity: 0.7;
+}
+
+.lh-20 {
+  line-height: 20px;
+}
+
+.lh-24 {
+  line-height: 24px;
+}
+
+.ff-b {
+  font-family: 'GoogleSansBold';
+}
+
+.ff-m {
+  font-family: 'GoogleSansMedium';
+}
+
+.fc-dark {
+  color: #14163A;
+}
+
+.fc-light {
+  color: #FFFFFF;
+}
+
+.fs-64 {
+  font-size: 64px;
+}
+
+.fs-48 {
+  font-size: 48px;
+}
+
+.fs-24 {
+  font-size: 24px;
+}
+
+.fs-18 {
+  font-size: 18px;
+}
+
+.fs-17 {
+  font-size: 17px;
+}
+
+.fs-16 {
+  font-size: 16px;
+}
+
+.fs-15 {
+  font-size: 15px;
+}
+
+.fs-14 {
+  font-size: 14px;
+}
+
+.fs-12 {
+  font-size: 14px;
+}
+
+/* Headings */
+/*
+    64 / 82 -> h1
+    48 / 61 -> h2
+    40 / 51 -> h3
+    28 / 36 -> h4
+    24 / 30 -> h5
+*/
+h1, h2, h3, h4, h5 {
+  font-family: 'GoogleSansBold';
+  letter-spacing: 0;
+}
+
+h1 {
+  font-size: 64px;
+  line-height: 82px;
+}
+
+@media (max-width: 800px) {
+  h1 {
+    font-size: 36px;
+    line-height: 46px;
+  }
+}
+
+h2 {
+  font-size: 48px;
+  line-height: 61px;
+}
+
+@media (max-width: 800px) {
+  h2 {
+    font-size: 32px;
+    line-height: 41px;
+  }
+}
+
+h3 {
+  font-size: 40px;
+  line-height: 51px;
+}
+
+@media (max-width: 800px) {
+  h3 {
+    font-size: 34px;
+    line-height: 46px;
+  }
+}
+
+h4 {
+  font-size: 28px;
+  line-height: 36px;
+}
+
+@media (max-width: 800px) {
+  h4 {
+    font-size: 22px;
+    line-height: 30px;
+  }
+}
+
+h5 {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+@media (max-width: 800px) {
+  h5 {
+    font-size: 18px;
+    line-height: 23px;
+  }
+}
+
 body {
   background-color: #14163A;
   background-image: url("/dist/images/symbols/symbols.svg");
@@ -600,31 +810,9 @@ body {
   background-position: right top;
 }
 
-h2 {
-  font-family: "GoogleSansRegular";
-  font-size: 40px;
-  font-weight: bold;
-  letter-spacing: 0;
-  line-height: 51px;
-}
-
-@media (max-width: 800px) {
-  h2 {
-    font-size: 36px;
-    line-height: 48px;
-  }
-}
-
-@media (max-width: 600px) {
-  h2 {
-    font-size: 32px;
-    line-height: 44px;
-  }
-}
-
 .hero {
   position: relative;
-  height: 493px;
+  height: 437px;
   min-width: 360px;
   color: #FFFFFF;
 }
@@ -659,10 +847,6 @@ h2 {
 }
 
 .hero__text article {
-  font-family: "GoogleSansRegular";
-  font-size: 16px;
-  letter-spacing: 0;
-  line-height: 24px;
   max-width: 604px;
 }
 
@@ -678,9 +862,9 @@ main::before {
   position: absolute;
   width: 1100px;
   height: 1100px;
+  z-index: -1;
   bottom: -10px;
   left: 0;
-  z-index: 100;
   background-image: url("/dist/images/symbols/symbols.svg");
   background-repeat: no-repeat;
   -webkit-transform: rotate(90deg) scaleY(-1);
@@ -749,23 +933,7 @@ main::before {
   }
 }
 
-.coworking-section__info a {
-  cursor: pointer;
-  color: #5D6BF6;
-  font-size: 14px;
-  font-weight: bold;
-  letter-spacing: 0;
-  line-height: 20px;
-  text-decoration: none;
-  font-family: 'GoogleSansBold';
-}
-
 .coworking-section__info article {
-  opacity: 0.7;
-  color: #FFFFFF;
-  font-size: 16px;
-  letter-spacing: 0;
-  line-height: 24px;
   margin: 16px 0px 32px 0px;
 }
 

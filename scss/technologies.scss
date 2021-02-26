@@ -2,20 +2,14 @@
 @import "header";
 @import "footer";
 @import "button";
+@import "tag";
+@import "text_style";
 
 body {
     background-color: $primary-color;
     background-image: url("/dist/images/symbols/symbols.svg");
     background-repeat: no-repeat;
     background-position: right top;
-    min-width: 360px;
-}
-
-h2 {
-    font-size: 40px;
-    font-weight: bold;
-    letter-spacing: 0;
-    line-height: 51px;
 }
 
 .hero {
@@ -26,24 +20,15 @@ h2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-  
 
     &__text {
         max-width: 570px;
        
-
         &__separator {
             height: 4px;
             width: 60px;
             background-color: $primary-color-light;
             margin: 32px 0px 24px 0px;
-        }
-
-        article {
-            font-size: 16px;
-            font-weight: 500;
-            letter-spacing: 0;
-            line-height: 24px;
         }
     }
 }
@@ -51,50 +36,9 @@ h2 {
 .technologies {
     width: 100%;
     color: set-color($primary-color);
-
-    h4 {
-        font-size: 24px;
-        font-weight: bold;
-        letter-spacing: 0;
-        line-height: 30px;
-    }
-
-    &__wrapper {
-        display: flex;
-        flex-wrap: wrap;
-        column-gap: 16px;
-        row-gap: 24px;
-        padding-top: 32px;
-        padding-bottom: 120px;
-
-        @media (max-width: 1100px) {
-            column-gap: 12px;
-            row-gap: 16px;
-        }
-
-        @media (max-width: 600px) {
-            column-gap: 8px;
-            row-gap: 12px;
-        }
-    }
 }
 
-.technology-tag {
-    display: flex;
-    background-color: #2B2D4E;
-    padding: 12px;
-    border-radius: 4px;
-    align-items: center;
-    justify-content: center;
-
-    @media (max-width: 1100px) {
-        padding: 8px;
-    }
-
-    @media (max-width: 600px) {
-        padding: 6px;
-    }
-
+.tag {
     svg {
         height: 28px;
         width: 28px;
@@ -105,7 +49,7 @@ h2 {
         }
     }
 
-    &__name {
+    .technology-tag__name {
         font-size: 24px;
         font-weight: bold;
         letter-spacing: 0;
@@ -128,7 +72,7 @@ h2 {
         }
     }
 
-    &__count {
+    .technology-tag__count {
         font-size: 20px;
         letter-spacing: 0;
         line-height: 25px;

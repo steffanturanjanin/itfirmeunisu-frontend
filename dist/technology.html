@@ -4,15 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> IT firme u Nišu | Javascript</title>
+    <link rel="icon" type="image/svg" href="/dist/images/favicon/itfn-favicon.svg"/>
     <link rel="stylesheet" href="/dist/css/technology.css">
 </head>
 <body>
   
     <header class="container">
         <nav class="nav">
-            <!-- <img src="./images/logo/itfn-logo.png" id="logo"/> -->
-
-            <a href="#" id="logo">
+            <a href="/dist/homepage.html" id="logo">
                 <svg width="209px" height="28px" viewBox="0 0 209 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <title>533D9D36-12CA-4C2D-B40A-D9E25C4FFBBD</title>
                     <defs>
@@ -34,7 +33,7 @@
                                 <text id="u" mask="url(#mask-2)" font-family="Metropolis-Bold, Metropolis" font-size="26.6412" font-weight="bold" fill="#FFFFFF">
                                     <tspan x="105.684546" y="21.830226">u</tspan>
                                 </text>
-                                <text id="nišu/&gt;" mask="url(#mask-2)" font-family="Metropolis-Bold, Metropolis" font-size="26.6412" font-weight="bold" fill="#5D6BF6">
+                                <text id="nisu" mask="url(#mask-2)" font-family="Metropolis-Bold, Metropolis" font-size="26.6412" font-weight="bold" fill="#5D6BF6">
                                     <tspan x="123.485533" y="21.830226">nišu/&gt;</tspan>
                                 </text>
                             </g>
@@ -87,14 +86,14 @@
                         </div>
 
                         <div class="submenu collapsed">
-                            <a href="#" class="submenu__item">1-10 zaposlenih</a>
-                            <a href="#" class="submenu__item">11-20 zaposlenih</a>
-                            <a href="#" class="submenu__item">21-50 zaposlenih</a>                         
+                            <a href="/dist/technology.html" class="submenu__item">1-10 zaposlenih</a>
+                            <a href="/dist/technology.html" class="submenu__item">11-20 zaposlenih</a>
+                            <a href="/dist/technology.html" class="submenu__item">21-50 zaposlenih</a>                         
                         </div>
                     </div>
 
                     <div class="nav__item">
-                        <a href="#" class="nav__item-link"> Jobs </a>
+                        <a href="/dist/technology.html" class="nav__item-link"> Jobs </a>
                     </div>
 
                     <div class="nav__item">
@@ -104,12 +103,10 @@
                     <div class="nav__item">
                         <a href="/dist/products.html" class="nav__item-link"> Startups </a>
                     </div>
-
                 </div>
             </div>
 
-            <a id="btnHamburger">
-                
+            <a id="btnHamburger">       
                 <svg class="hamburger visible" id="btnHamburger__open" width="22px" height="14px" viewBox="0 0 22 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <g id="dgn" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                         <g id="itfn-homepage-375" transform="translate(-329.000000, -22.000000)" fill="#FFFFFF" fill-rule="nonzero">
@@ -122,15 +119,14 @@
 
                 <svg class="hamburger invisible" id="btnHamburger__close" fill="white" enable-background="new 0 0 386.667 386.667" height="18" viewBox="0 0 386.667 386.667" width="18" xmlns="http://www.w3.org/2000/svg"><path d="m386.667 45.564-45.564-45.564-147.77 147.769-147.769-147.769-45.564 45.564 147.769 147.769-147.769 147.77 45.564 45.564 147.769-147.769 147.769 147.769 45.564-45.564-147.768-147.77z"/></svg>
             </a>
-
         </nav>
     </header>
     
     <section class="hero container">
         <div class="hero__text">
-            <h2> JavaScript </h2>
+            <h3> JavaScript </h3>
             <div class="hero__text__separator"></div>
-            <article>
+            <article class="font-primary ff-m">
                 JavaScript, often abbreviated as JS, is a programming language that conforms to the ECMAScript specification. JavaScript is high-level, often just-in-time compiled, and multi-paradigm. 
             </article>
         </div>
@@ -165,108 +161,108 @@
 
             <section class="companies-container">
                 <!-- First row -->
-                <div class="company-card">
+                <div class="card company-card">
                     <img src="./images/companies/cover-photos/neopix-cover.jpg" alt="" class="cover-image">
                     <div class="company-info">
                         <img src="./images/companies/logos/neopix-logo.png" alt="" class="logo-image">
                         <div class="company-info__text">
                             <h4>Neopix</h4>
-                            <a href="#">weareneopix.com</a>
+                            <a class="link" href="#">weareneopix.com</a>
                         </div>
                     </div>
-                    <div class="tag-container">
-                        <div class="tag"> PHP </div>
-                        <div class="tag"> JavaScript </div>
-                        <div class="tag"> NodeJS </div>
-                        <div class="tag"> Product Design </div>
-                        <div class="tag"> Branding </div>
-                        <div class="tag"> +8 </div>
+                    <div class="tag-container sm">
+                        <div class="tag light"> PHP </div>
+                        <div class="tag light"> JavaScript </div>
+                        <div class="tag light"> NodeJS </div>
+                        <div class="tag light"> Product Design </div>
+                        <div class="tag light"> Branding </div>
+                        <div class="tag light"> +8 </div>
                     </div>
                 </div>
 
-                <div class="company-card">
+                <div class="card company-card">
                     <img src="./images/companies/cover-photos/htec-cover.png" alt="" class="cover-image">
                     <div class="company-info">
                         <img src="./images/companies/logos/htec-logo.jpg" alt="" class="logo-image">
                         <div class="company-info__text">
                             <h4>2i Global Software Solutions doo</h4>
-                            <a href="#">weareneopix.com</a>
+                            <a class="link" href="#">weareneopix.com</a>
                         </div>
                     </div>
-                    <div class="tag-container">
-                        <div class="tag"> PHP </div>
-                        <div class="tag"> JavaScript </div>
-                        <div class="tag"> NodeJS </div>
+                    <div class="tag-container sm">
+                        <div class="tag light"> PHP </div>
+                        <div class="tag light"> JavaScript </div>
+                        <div class="tag light"> NodeJS </div>
                     </div>
                 </div>
         
-                <div class="company-card">
+                <div class="card company-card">
                     <img src="./images/companies/cover-photos/neopix-cover.jpg" alt="" class="cover-image">
                     <div class="company-info">
                         <img src="./images/companies/logos/neopix-logo.png" alt="" class="logo-image">
                         <div class="company-info__text">
                             <h4>Neopix</h4>
-                            <a href="#">weareneopix.com</a>
+                            <a class="link" href="#">weareneopix.com</a>
                         </div>
                     </div>
-                    <div class="tag-container">
-                        <div class="tag"> PHP </div>
-                        <div class="tag"> JavaScript </div>
-                        <div class="tag"> NodeJS </div>
-                        <div class="tag"> Product Design </div>
-                        <div class="tag"> Branding </div>
-                        <div class="tag"> +8 </div>
+                    <div class="tag-container sm">
+                        <div class="tag light"> PHP </div>
+                        <div class="tag light"> JavaScript </div>
+                        <div class="tag light"> NodeJS </div>
+                        <div class="tag light"> Product Design </div>
+                        <div class="tag light"> Branding </div>
+                        <div class="tag light"> +8 </div>
                     </div>
                 </div>
 
-                <div class="company-card">
+                <div class="card company-card">
                     <img src="./images/companies/cover-photos/htec-cover.png" alt="" class="cover-image">
                     <div class="company-info">
                         <img src="./images/companies/logos/htec-logo.jpg" alt="" class="logo-image">
                         <div class="company-info__text">
                             <h4>2i Global Software Solutions doo</h4>
-                            <a href="#">weareneopix.com</a>
+                            <a class="link" href="#">weareneopix.com</a>
                         </div>
                     </div>
-                    <div class="tag-container">
-                        <div class="tag"> PHP </div>
-                        <div class="tag"> JavaScript </div>
-                        <div class="tag"> NodeJS </div>
+                    <div class="tag-container sm">
+                        <div class="tag light"> PHP </div>
+                        <div class="tag light"> JavaScript </div>
+                        <div class="tag light"> NodeJS </div>
                     </div>
                 </div>
 
-                <div class="company-card">
+                <div class="card company-card">
                     <img src="./images/companies/cover-photos/neopix-cover.jpg" alt="" class="cover-image">
                     <div class="company-info">
                         <img src="./images/companies/logos/neopix-logo.png" alt="" class="logo-image">
                         <div class="company-info__text">
                             <h4>Neopix</h4>
-                            <a href="#">weareneopix.com</a>
+                            <a class="link" href="#">weareneopix.com</a>
                         </div>
                     </div>
-                    <div class="tag-container">
-                        <div class="tag"> PHP </div>
-                        <div class="tag"> JavaScript </div>
-                        <div class="tag"> NodeJS </div>
-                        <div class="tag"> Product Design </div>
-                        <div class="tag"> Branding </div>
-                        <div class="tag"> +8 </div>
+                    <div class="tag-container sm">
+                        <div class="tag light"> PHP </div>
+                        <div class="tag light"> JavaScript </div>
+                        <div class="tag light"> NodeJS </div>
+                        <div class="tag light"> Product Design </div>
+                        <div class="tag light"> Branding </div>
+                        <div class="tag light"> +8 </div>
                     </div>
                 </div>
 
-                <div class="company-card">
+                <div class="card company-card">
                     <img src="./images/companies/cover-photos/htec-cover.png" alt="" class="cover-image">
                     <div class="company-info">
                         <img src="./images/companies/logos/htec-logo.jpg" alt="" class="logo-image">
                         <div class="company-info__text">
                             <h4>2i Global Software Solutions doo</h4>
-                            <a href="#">weareneopix.com</a>
+                            <a class="link" href="#">weareneopix.com</a>
                         </div>
                     </div>
-                    <div class="tag-container">
-                        <div class="tag"> PHP </div>
-                        <div class="tag"> JavaScript </div>
-                        <div class="tag"> NodeJS </div>
+                    <div class="tag-container sm">
+                        <div class="tag light"> PHP </div>
+                        <div class="tag light"> JavaScript </div>
+                        <div class="tag light"> NodeJS </div>
                     </div>
                 </div>
 

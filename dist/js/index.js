@@ -1,13 +1,9 @@
 import { toggleHamburgerEventListener, toggleSubMenuEventListener } from "./_small_screen_menu.js";
-import { dropdownMenuListener } from "./_dropdown_menu_listener.js";
 
 toggleHamburgerEventListener();
 toggleSubMenuEventListener();
 
-// dropdownMenuListener();
-
 const header = document.getElementsByTagName('header')[0];
-
 
 window.addEventListener('resize', function(event) {
 

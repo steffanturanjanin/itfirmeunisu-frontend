@@ -3,9 +3,7 @@ import { toggleHamburgerEventListener, toggleSubMenuEventListener } from "./_sma
 toggleHamburgerEventListener();
 toggleSubMenuEventListener();
 
-
 const header = document.getElementsByTagName('header')[0];
-
 
 window.addEventListener('resize', function(event) {
 

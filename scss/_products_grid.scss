@@ -1,4 +1,6 @@
 @import 'card';
+@import 'link';
+@import 'text_style';
 
 .startup-container {
     //padding-top: 96px;
@@ -27,21 +29,7 @@
         margin-bottom: 24px;
     }
 
-    h4 {
-        font-size: 24px;
-        font-weight: bold;
-        letter-spacing: 0;
-        line-height: 30px;
-        color: #14163A;
-    }
-
     article {
-        opacity: 0.7;
-        color: $primary-color;
-        font-family: "GoogleSansRegular";
-        font-size: 14px;
-        letter-spacing: 0;
-        line-height: 20px;
         padding: 12px 0 32px 0px;
     }
 
@@ -54,24 +42,12 @@
             cursor: pointer;
         }
 
-        &__website {
-            color: $primary-color-light;
-            font-size: 14px;
-            font-weight: bold;
-            letter-spacing: 0;
+        .link {
             line-height: 20px;
-            text-decoration: none;
         }
 
         &__profile {
-            opacity: 0.7;
-            color: $primary-color;
-            font-family: "GoogleSansRegular";
-            font-size: 14px;
-            font-weight: 500;
-            letter-spacing: 0;
-            line-height: 20px;
-            text-align: right;
+            text-decoration: none;
         }
     }
 }

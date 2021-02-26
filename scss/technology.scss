@@ -4,49 +4,32 @@
 @import "button";
 @import "companies_grid";
 @import "pagination";
+@import "text_style";
 
 body {
     background-color: $primary-color;
     background-image: url("/dist/images/symbols/symbols.svg");
     background-repeat: no-repeat;
     background-position: right top;
-    width: 100%;
-    min-width: 360px;
-}
-
-h2 {
-    font-size: 40px;
-    font-weight: bold;
-    letter-spacing: 0;
-    line-height: 51px;
 }
 
 .hero {
-    //position: relative;
+    position: relative;
     height: 369px;
     min-width: 360px;
     color: set-color($primary-color);
     display: flex;
     flex-direction: column;
     justify-content: center;
-  
 
     &__text {
         max-width: 570px;
        
-
         &__separator {
             height: 4px;
             width: 60px;
             background-color: $primary-color-light;
             margin: 32px 0px 24px 0px;
-        }
-
-        article {
-            font-size: 16px;
-            font-weight: 500;
-            letter-spacing: 0;
-            line-height: 24px;
         }
     }
 }

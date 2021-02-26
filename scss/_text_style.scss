@@ -1,0 +1,138 @@
+@import "config";
+
+.font-ghost, .font-primary {
+    letter-spacing: 0;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.font-ghost {
+    color: $primary-color;
+    opacity: 0.7;
+}
+
+.lh-20 {
+    line-height: 20px;
+}
+
+.lh-24 {
+    line-height: 24px;
+}
+
+.ff-b {
+    font-family: 'GoogleSansBold';
+}
+
+.ff-m {
+    font-family: 'GoogleSansMedium';
+}
+
+.fc-dark {
+    color: $primary-color;
+}
+
+.fc-light {
+    color: #FFFFFF;
+}
+
+.fs-64 {
+    font-size: 64px; 
+}
+
+.fs-48 {
+    font-size: 48px; 
+}
+
+.fs-24 {
+    font-size: 24px; 
+}
+
+.fs-18 {
+    font-size: 18px;
+}
+
+.fs-17 {
+    font-size: 17px;
+}
+
+.fs-16 {
+    font-size: 16px;
+}
+
+.fs-15 {
+    font-size: 15px;
+}
+
+.fs-14 {
+    font-size: 14px;
+}
+
+.fs-12 {
+    font-size: 14px;
+}
+
+/* Headings */
+
+/*
+    64 / 82 -> h1
+    48 / 61 -> h2
+    40 / 51 -> h3
+    28 / 36 -> h4
+    24 / 30 -> h5
+*/
+
+h1, h2, h3, h4, h5 {
+    font-family: 'GoogleSansBold';
+    letter-spacing: 0;
+}
+
+h1 {
+    font-size: 64px;
+    line-height: 82px;
+
+    @media(max-width: 800px) {
+        // font-size: 64px * 0.5625;
+        font-size: 36px;
+        line-height: 46px;
+    }
+}
+
+h2 {
+    font-size: 48px;
+    line-height: 61px;
+
+    @media(max-width: 800px) {
+        font-size: 32px;
+        line-height: 41px;
+    }
+}
+
+h3 {
+    font-size: 40px;
+    line-height: 51px;
+
+    @media(max-width: 800px) {
+        font-size: 34px;
+        line-height: 46px;
+    }
+}
+
+h4 {
+    font-size: 28px;
+    line-height: 36px;
+
+    @media(max-width: 800px) {
+        font-size: 22px;
+        line-height: 30px;
+    }
+}
+
+h5 {
+    font-size: 24px;
+    line-height: 30px;
+
+    @media(max-width: 800px) {
+        font-size: 18px;
+        line-height: 23px;
+    }
+}

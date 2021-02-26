@@ -5,6 +5,8 @@
 @import 'pagination';
 @import 'media';
 @import 'companies_grid';
+@import 'link';
+@import 'text_style';
 
 .hero {
     background-color: $primary-color;
@@ -14,7 +16,7 @@
     background-position: -10% calc(100% - 24px);
     width: 100%;
     min-width: 351px;
-    height: 400px;
+    height: 360px;
     position: relative;
     color: set-color($primary-color);
 
@@ -22,7 +24,7 @@
 
         background-image: url(/dist/images/nis-fortress-ilustration/nis-ilustracija.svg), url(/dist/images/nis-pattern-ilustration/nis-ilustracija-02.svg);
         background-position: 850px calc(100% - 24px), -330px calc(100% - 24px);
-        background-repeat: no-repeat repeat-x;
+        background-repeat: no-repeat no-repeat;
         
     }
 
@@ -36,26 +38,8 @@
     }
 
     @include screen-up(screen-sm)  {
-        height: 478px;
+        height: 424px;
     }
-
-    // @media(max-width: 1180px) {
-    //     background-image: url(/dist/images/nis-fortress-ilustration/nis-ilustracija.svg);
-    //     background-repeat: no-repeat, no-repeat;
-    //     background-position: center;
-    // }
-
-    // @media(max-width: 930px) {
-    //     background-image: url(/dist/images/nis-pattern-ilustration/nis-ilustracija-02.svg);
-    //     background-repeat: no-repeat, no-repeat;
-    //     background-position: center;
-    // }
-
-    // @media(max-width: 640px) {
-    //     background-image: url(/dist/images/nis-pattern-ilustration/nis-ilustracija-02.svg);
-    //     background-repeat: no-repeat, no-repeat;
-    //     background-position: 0;
-    // }
 
     h1 {
         text-align: center;
@@ -66,230 +50,12 @@
     }
 }
 
-// main {
-//     background-color: $ghost-white;
-//     width: 100%;
-//     min-width: 351px;
-//     margin: auto;
-
-//     .search {
-//         display: flex;
-//         justify-content: space-between;
-//         align-items: center;
-//         padding-top: 48px;
-//         padding-bottom: 16px;
-
-//         @include screen-up(screen-sm) {
-//             padding-top: 72px;
-//             padding-bottom: 32px;
-//         }
-
-//         &__form {
-//             position: relative;
-//             color: #ABABC0;
-
-//             .search__field {
-//                 display: none;
-
-//                 @include screen-up(screen-sm)  {
-//                     display: block;
-//                     width: 262px;
-//                     opacity: 0.65;
-//                     outline: 0;
-//                     border-color: #E1E1EE;
-//                     border-width: 0 0 1px;
-//                     background: transparent;
-//                     font-family: GoogleSansRegular;
-//                     font-size: 16px;
-//                     letter-spacing: 0;
-//                     line-height: 24px;
-//                     padding-bottom: 5px;
-//                     text-indent: 28px;
-//                 }
-//             }
-
-//             svg {
-//                 // width: 16px;
-//                 // height: 16px;
-//                 // position: absolute;
-//                 // left: 0;
-//                 // bottom: 10px;
-
-//                 @include screen-up(screen-sm) {
-//                     width: 16px;
-//                     height: 16px;
-//                     position: absolute;
-//                     left: 0;
-//                     bottom: 10px; 
-//                }
-//             }
-//         }
-
-//         &__count {
-
-//             @include screen-up(screen-sm) {
-//                 font-size: 24px;
-//                 line-height: 30px;
-//             }
-
-//             font-size: 16px;
-//             font-weight: bold;
-//             letter-spacing: 0;
-//             line-height: 20px;
-//         }
-
-//         img {
-//             width: 18px;
-//             height: 18px;
-//         }
-//     } 
-
-//     .companies-container {
-//         width: 100%;    
-//         display: grid;
-//         grid-gap: 30px;
-//         justify-items: center;
-//         // grid-template-columns: 1fr 1fr 1fr 1fr;
-//         grid-template-columns: 1fr;
-
-//         @media(min-width: 600px) {
-//             grid-template-columns: 1fr 1fr;
-//         }
-
-//         @media(min-width: 800px) {
-//             grid-template-columns: 1fr 1fr 1fr;
-//         }
-
-//         @media(min-width: 1100px) {
-//             grid-template-columns: 1fr 1fr 1fr 1fr;
-//         }
-
-
-//         // @media(max-width: 1100px) {
-//         //     grid-template-columns: 1fr 1fr 1fr;   
-//         // }
-
-//         // @media(max-width: 800px) {
-//         //     grid-template-columns: 1fr 1fr;    
-//         // }
-
-//         // @media(max-width: 600px) {
-//         //     grid-template-columns: 1fr;
-//         // }
-//     }
-
-//     .company-card {
-
-//         width: 100%;
-//         height: auto;
-//         border-radius: 4px;
-//         background-color: $white;
-//         box-shadow: 0 2px 6px 0 rgba(0,0,0,0.1);
-//         position: relative;
-//         display: flex;
-//         flex-direction: column;
-
-
-//         img {
-//             object-fit: cover;
-//             width: 100%;
-//         }   
-
-
-//         .cover-image {
-//             display: none;
-            
-//             @include screen-up(screen-sm) {
-//                 display: block;
-//                 height: 140px;
-//             }
-//         }
-        
-
-//         .company-info {
-//             padding: 24px 24px 20px 24px;
-//             display: flex;
-//             align-items: center;
-
-//             @include screen-up(screen-sm) {
-//                 padding: 32px 24px 24px 24px;
-//             }
-            
-
-//             &__text {
-//                 padding-left: 16px;
-                
-//                 @include screen-up(screen-sm) {
-//                     padding-left: 0px;
-//                 }
-//             }
-
-//             .logo-image {
-//                 height: 60px;
-//                 width: 60px;
-//                 border-radius: 50%;
-//                 border: 2px solid #EBEBEB;
-//                 background-color: #FFFFFF;
-
-//                 @include screen-up(screen-sm) {
-//                     position: absolute;
-//                     top: 96px;
-//                     left: 24px;
-//                 }
-//             }
-
-//             h4 {
-//                 color: #14163A;
-//                 font-size: 18px;
-//                 font-weight: bold;
-//                 letter-spacing: 0;
-//                 line-height: 23px;
-
-//                 @include screen-up(screen-sm) {
-//                     font-size: 22px;
-//                     line-height: 28px;
-//                 }
-
-//                 @include screen-up(screen-lg) {
-//                     font-size: 24px;
-//                     line-height: 30px;
-//                 }
-//             }
-
-//             a {
-//                 color: $primary-color-light;
-//                 font-size: 14px;
-//                 font-weight: bold;
-//                 letter-spacing: 0;
-//                 line-height: 18px;
-//                 text-decoration: none;
-//             }
-//         }
-
-//         .tag-container {
-//             padding: 0px 23px 24px 24px;
-//             display: flex;
-//             flex-wrap: wrap;
-//             row-gap: 4px;
-//             column-gap: 4px;
-
-//             .tag  {
-//                 padding: 4px 6px 3px 6px;
-//                 height: 23px;
-//                 background-color: #F4F5F9;
-//                 border-radius: 2px;
-//                 color: #8B8B9F;
-//                 font-size: 12px;
-//                 font-weight: bold;
-//                 letter-spacing: 0;
-//                 line-height: 16px;
-//             }
-//         }
-//     }
-// }
-
 .coworking {
     width: 100%;
+    background-color: white;
+}
+    
+.coworking-wrapper {
     display: flex;
     justify-content: space-between;
     padding-top: 64px;
@@ -304,7 +70,7 @@
         flex-direction: row;
     }
 
-    &__img {
+    .coworking__img {
         min-width: 300px;
         object-fit: contain; 
         max-width: 500px;
@@ -321,7 +87,7 @@
         }
     }
 
-    &__text {
+    .coworking__text {
         display: flex;
         flex-direction: column;
         max-width: 640px;
@@ -331,20 +97,21 @@
             padding: 120px 6px 120px 0px;
         }
 
-        article {
-            opacity: 0.7;
-            font-family: 'GoogleSansRegular';
-            margin-top: 16px;
-            margin-bottom: 32px;
-            color: #14163A;
-            font-size: 16px;
-            letter-spacing: 0;
+        .font-ghost {
             line-height: 24px;
+            font-size: 16px;
 
             @include screen-up(screen-sm) {
                 font-size: 18px;
-                letter-spacing: 0;
                 line-height: 28px;
+            }
+        }
+
+        article {
+            margin-top: 16px;
+            margin-bottom: 32px;
+
+            @include screen-up(screen-sm) {
                 width: 500px;
             }
         }
