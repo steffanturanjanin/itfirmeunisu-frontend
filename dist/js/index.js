@@ -6,9 +6,6 @@ toggleSubMenuEventListener();
 const header = document.getElementsByTagName('header')[0];
 
 window.addEventListener('resize', function(event) {
-
-    console.log(header.classList.contains('open'));
-
     // if (event.target.screen.width > 860 && header.classList.contains('fix-header')) {
     //     header.classList.remove('fix-header');
     // }
@@ -22,7 +19,7 @@ window.addEventListener('resize', function(event) {
         document.body.style.overflow = 'scroll';
     }
 
-    if (event.target.screen.width <= 800 && navMenu.classList.contains('open')) {
+    if (event.target.screen.width <= 800 && header.classList.contains('open')) {
         document.body.style.overflow = 'hidden';
     }
 
