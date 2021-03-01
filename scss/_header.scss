@@ -63,8 +63,17 @@ header {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding-top: 18px;
+
+    @media (max-width: 800px) {
+        padding-top: 18px;
+    }
+    //padding-top: 18px;
     // padding: 18px 0;
+
+    &__logo {
+        width: 209px;
+        height: 28px;
+    }
 
     &__container {
         display: flex;
@@ -111,18 +120,9 @@ header {
     z-index: 10;
 }
 
-#btnHamburger {
-    display: none;
-
-    @include screen-down(screen-sm) {
-        display: block;
-        width: 22px;
-        height: 22px;
-    }
-}
-
 .nav__item {
-    padding: 16px 0 8px 0;
+    padding: 0 0 16px 0;
+    margin-top: 26px;
 
     &.active {
         color:white;
@@ -138,9 +138,25 @@ header {
 }
 
 .nav__menu {
-    @include screen-up(screen-sm) {
-        position: relative;
+    position: relative;
+    z-index: 1;
 
+    &-hamburger {
+        display: none;
+        background-color: transparent;
+        outline:none;
+        border: none; 
+        cursor: pointer;
+
+        @include screen-down(screen-sm) {
+            display: flex;
+            align-items: center;
+            width: 22px;
+            height: 14px;
+        } 
+    }
+
+    @include screen-up(screen-sm) {
         .nav__item-link:after {
             content: "";
             transition: all ease-in-out .2s;
