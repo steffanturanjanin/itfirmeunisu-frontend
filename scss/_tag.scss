@@ -90,7 +90,6 @@
     font-family: 'GoogleSansBold';
     letter-spacing: 0;
     border-radius: 2px;
-    cursor: pointer;
 
     &.lg {
         border-radius: 4px;
@@ -133,5 +132,9 @@
         &:hover {
             background-color: darken($color: #F4F5F9, $amount: 2.8);
         }
+    }
+
+    &.more-tags {
+        cursor:default;
     }
 }

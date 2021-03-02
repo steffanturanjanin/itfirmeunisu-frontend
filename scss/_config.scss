@@ -6,21 +6,23 @@ $primary-color-dark: #0C0E2E;
 $white: #FFFFFF;
 $ghost-white: #F9FAFF;
 $faux-cool-gray: #8487B0;
-$black: #000000;
 
 @font-face {
   font-family: GoogleSansRegular;
   src: url(/dist/fonts/Google-Sans-Fonts/GoogleSans-Regular.ttf);
+  font-display: swap;
 }
 
 @font-face {
   font-family: GoogleSansMedium;
   src: url(/dist/fonts/Google-Sans-Fonts/GoogleSans-Medium.ttf);
+  font-display: swap;
 }
 
 @font-face {
   font-family: GoogleSansBold;
   src: url(/dist/fonts/Google-Sans-Fonts/GoogleSans-Bold.ttf);
+  font-display: swap;
 }
 
 body {
@@ -35,7 +37,7 @@ body {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'GoogleSansRegular';
+    font-family: 'GoogleSansRegular', 'Open Sans', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 a {

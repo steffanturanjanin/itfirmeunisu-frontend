@@ -11,6 +11,7 @@
 .home-title {
     font-size: 64px;
     line-height: 82px;
+    text-align: center;
 
     @media(max-width: 800px) {
         font-size: 36px;
@@ -47,15 +48,7 @@
     @include screen-up(screen-sm)  {
         height: 407px;
     }
-
-    h1 {
-        text-align: center;
-    }
-
-    span {
-        color: $primary-color-light;
-    }
-
+    
     strong {
         color: $primary-color-light;
     }
@@ -95,7 +88,7 @@
     .coworking__img {
         min-width: 300px;
         object-fit: contain; 
-        max-width: 500px;
+        max-width: 100%;
         height: auto;
         text-align: center;
         margin-top: 48px;

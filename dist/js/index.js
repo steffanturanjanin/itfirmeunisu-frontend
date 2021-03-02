@@ -1,5 +1,4 @@
 import { toggleHamburgerEventListener, toggleSubMenuEventListener } from "./_small_screen_menu.js";
-import { preventDefault } from "./_prevent_default.js";
 
 toggleHamburgerEventListener();
 toggleSubMenuEventListener();
@@ -26,4 +25,3 @@ window.addEventListener('resize', function(event) {
 
 });
 
-window.preventDefault = preventDefault;
