@@ -1,17 +1,26 @@
-@import 'config';
-@import 'header';
-@import 'footer';
-@import 'button';
-@import 'pagination';
-@import 'media';
-@import 'companies_grid';
-@import 'link';
-@import 'text_style';
+@import "config";
+@import "header";
+@import "footer";
+@import "button";
+@import "pagination";
+@import "media";
+@import "companies_grid";
+@import "link";
+@import "text_style";
+
+.home-title {
+    font-size: 64px;
+    line-height: 82px;
+
+    @media(max-width: 800px) {
+        font-size: 36px;
+        line-height: 46px;
+    }
+}
 
 .hero {
     background-color: $primary-color;
     background-image: url(/dist/images/nis-fortress-ilustration/nis-ilustracija.svg);
-   
     background-repeat: no-repeat;
     background-position: -10% calc(100% - 24px);
     width: 100%;
@@ -21,11 +30,9 @@
     color: set-color($primary-color);
 
     @include screen-up(screen-sm) {
-
         background-image: url(/dist/images/nis-fortress-ilustration/nis-ilustracija.svg), url(/dist/images/nis-pattern-ilustration/nis-ilustracija-02.svg);
         background-position: 850px calc(100% - 24px), -330px calc(100% - 24px);
         background-repeat: no-repeat no-repeat;
-        
     }
 
     &__text {
@@ -48,11 +55,26 @@
     span {
         color: $primary-color-light;
     }
+
+    strong {
+        color: $primary-color-light;
+    }
 }
 
 .coworking {
     width: 100%;
     background-color: white;
+
+    h2 {
+        font-size: 48px;
+        line-height: 61px;
+    
+        @media(max-width: 800px) {
+            font-size: 32px;
+            line-height: 41px;
+        }
+    }
+    
 }
     
 .coworking-wrapper {

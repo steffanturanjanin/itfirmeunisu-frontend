@@ -2,6 +2,30 @@
 @import "card";
 @import "link";
 
+.company-card__title, .search__count > h2 {
+    font-size: 24px;
+    line-height: 30px;
+
+    @media(max-width: 800px) {
+        font-size: 18px;
+        line-height: 23px;
+    }
+}
+
+.company-card__title {
+    @media(max-width: 800px) {
+        font-size: 18px;
+        line-height: 23px;
+    }
+}
+
+.search__count > h2 {
+    @media(max-width: 800px) {
+        font-size: 16px;
+        line-height: 20px;
+    }
+}
+
 main {
     background-color: $ghost-white;
     width: 100%;
@@ -45,12 +69,6 @@ main {
             }
 
             svg {
-                // width: 16px;
-                // height: 16px;
-                // position: absolute;
-                // left: 0;
-                // bottom: 10px;
-
                 @include screen-up(screen-sm) {
                     width: 16px;
                     height: 16px;
@@ -59,18 +77,6 @@ main {
                     bottom: 10px; 
                }
             }
-        }
-
-        &__count {
-            @include screen-up(screen-sm) {
-                font-size: 24px;
-                line-height: 30px;
-            }
-
-            font-size: 16px;
-            font-weight: bold;
-            letter-spacing: 0;
-            line-height: 20px;
         }
 
         img {
@@ -84,7 +90,6 @@ main {
         display: grid;
         grid-gap: 30px;
         justify-items: center;
-        // grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-columns: 1fr;
 
         @media(min-width: 600px) {
@@ -102,7 +107,6 @@ main {
 }
 
 .company-card {
-
     width: 100%;
     height: auto;
     border-radius: 4px;
@@ -120,23 +124,23 @@ main {
 
     .cover-image {
         display: none;
+        height: 140px;
         
         @include screen-up(screen-sm) {
             display: block;
-            height: 140px;
         }
     }
-    
 
     .company-info {
-        padding: 24px 24px 20px 24px;
+        padding-top: 24px;
+        padding-bottom: 20px;
         display: flex;
         align-items: center;
 
         @include screen-up(screen-sm) {
-            padding: 32px 24px 24px 24px;
-        }
-        
+            padding-top: 32px;
+            padding-bottom: 24px;
+        }    
 
         &__text {
             padding-left: 16px;
@@ -157,13 +161,6 @@ main {
                 position: absolute;
                 top: 96px;
                 left: 24px;
-            }
-        }
-
-        h4 {
-            @include screen-up(screen-sm) {
-                font-size: 22px;
-                line-height: 28px;
             }
         }
     }

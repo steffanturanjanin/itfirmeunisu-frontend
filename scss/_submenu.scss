@@ -20,7 +20,6 @@
     align-items: center;
 }
 
-
 .open {
     .collapsed {
         @media(max-width: 800px) {
@@ -41,7 +40,6 @@
 
 .submenu {
     z-index: 1;
-
     display: none;
 
     .submenu__item {
@@ -53,6 +51,9 @@
         text-decoration: none;
         font-family: 'GoogleSansBold';
 
+        &.active {
+            color: $primary-color-light;
+        }
 
         &:hover {
             color: $primary-color-light
@@ -75,7 +76,6 @@
         }
     }
 }
-
 
 .submenu__column {
     display: flex;

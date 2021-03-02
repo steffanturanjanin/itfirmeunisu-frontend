@@ -5,11 +5,31 @@
 @import "link";
 @import "text_style";
 
+h1, h2 {
+    font-size: 40px;
+    line-height: 51px;
+
+    @media(max-width: 800px) {
+        font-size: 34px;
+        line-height: 46px;
+    }
+}
+
 body {
     background-color: $primary-color;
     background-image: url("/dist/images/symbols/symbols.svg");
     background-repeat: no-repeat;
     background-position: right top;
+}
+
+.coworking-title {
+    font-size: 40px;
+    line-height: 51px;
+
+    @media(max-width: 800px) {
+        font-size: 34px;
+        line-height: 46px;
+    }
 }
 
 .hero {
@@ -40,7 +60,6 @@ body {
         article {
             max-width: 604px;
         }
-
     }
 }
 
@@ -53,8 +72,9 @@ main {
     &::before {  
         content: "";
         position: absolute;
-        width: 1100px;
-        height: 1100px;
+        left:calc((100vw - 1180)/2);
+        width: 1160px;
+        height: 1154px;
         z-index: -1;
 
         @media (max-width: 1100px) {
@@ -68,7 +88,7 @@ main {
         }
 
         bottom: -10px;
-        left: 0;
+        //left: -155px;
         background-image: url("/dist/images/symbols/symbols.svg");
         background-repeat: no-repeat;
         transform: rotate(90deg) scaleY(-1);
@@ -78,6 +98,7 @@ main {
 .coworking-section {
     display: flex;
     align-items: center;
+    
 
     @media (max-width: 1100px) {           
         flex-direction: column;
@@ -128,5 +149,4 @@ main {
             }
         }      
     }
-    
 }

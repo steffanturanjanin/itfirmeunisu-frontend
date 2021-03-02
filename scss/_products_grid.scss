@@ -1,9 +1,7 @@
 @import 'card';
 @import 'link';
-@import 'text_style';
 
 .startup-container {
-    //padding-top: 96px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     row-gap: 12px;
@@ -21,6 +19,16 @@
 .startup-card {
     padding: 32px 24px 24px 24px;
 
+    &__title {
+        font-size: 24px;
+        line-height: 30px;
+
+        @media(max-width: 800px) {
+            font-size: 18px;
+            line-height: 23px;
+        }
+    }
+
     img {
         height: 40px;
         max-width: 50%;
@@ -31,6 +39,8 @@
 
     article {
         padding: 12px 0 32px 0px;
+        font-size: 14px;
+        line-height: 20px;
     }
 
     .company-links {
@@ -48,6 +58,9 @@
 
         &__profile {
             text-decoration: none;
+            font-size: 14px;
+            line-height: 20px;
+            font-family: 'GoogleSansMedium';
         }
     }
 }

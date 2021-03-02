@@ -3,7 +3,6 @@
 @import 'footer';
 @import 'button';
 @import 'pagination';
-@import 'media';
 @import 'products_grid';
 @import 'text_style';
 
@@ -12,6 +11,16 @@ body {
     background-image: url("/dist/images/symbols/symbols.svg");
     background-repeat: no-repeat;
     background-position: right top;
+}
+
+.products-title {
+    font-size: 40px;
+    line-height: 51px;
+
+    @media(max-width: 800px) {
+        font-size: 34px;
+        line-height: 46px;
+    }
 }
 
 .hero {

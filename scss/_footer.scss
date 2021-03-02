@@ -1,24 +1,19 @@
-@import "media";
-
 footer {
     width: 100%;
     min-width: 360px;
     height: 501px;
     background-color: $primary-color-dark;
-    // background-image: url(/dist/images/symbols/symbols.svg);
-    // background-repeat: no-repeat;
-    // background-position: right 10% center;
     position: relative;
     color: set-color($primary-color);
     overflow: hidden;
     z-index: -2;
 
     &::before {  
-        z-index: -1;
         content: "";
+        z-index: -1;
         position: absolute;
         width: 100%;
-        height: calc(100% + 60px);
+        height: calc(100% + 50px);
 
         @media (max-width: 600px) {
             height: calc(100% + 55px);
@@ -55,6 +50,7 @@ footer {
             flex-direction: column;
             justify-content: space-between;
             margin-bottom: 40px;
+           
 
             @include screen-up(screen-md) {
                 flex-direction: row-reverse;
@@ -73,6 +69,7 @@ footer {
                 font-weight: bold;
                 letter-spacing: 0;
                 line-height: 20px;
+                font-family: 'GoogleSansBold';
             }
 
             a {
@@ -83,12 +80,20 @@ footer {
                 line-height: 20px;
                 text-decoration: none;
                 cursor: pointer;
+                font-family: 'GoogleSansBold';
             }
         }
     }
 
     h2 {   
+        font-size: 48px;
+        line-height: 61px;
         max-width: 640px;
         margin-bottom: 32px;
+
+        @media(max-width: 800px) {
+            font-size: 32px;
+            line-height: 41px;
+        }
     }
 }

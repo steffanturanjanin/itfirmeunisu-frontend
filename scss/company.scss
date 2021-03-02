@@ -14,6 +14,16 @@ body {
     background-position: right top;
 }
 
+.company-info__title {
+    font-size: 24px;
+    line-height: 30px;
+
+    @media(max-width: 800px) {
+        font-size: 18px;
+        line-height: 23px;
+    }
+}
+
 .hero {
     height: auto;
     min-height: 300px;
@@ -26,7 +36,6 @@ body {
     @media (max-width: 600px) {
         padding-bottom: 28px;
     }
-
 }
 
 .company-wrapper {
@@ -110,10 +119,9 @@ body {
 .company-social-media {
     display: flex;
 
-    #facebook, #linkedin, #twitter, #instagram {
-        &:hover {
-            fill: $primary-color-light;
-        }
+    &__icon {
+        height: 18px;
+        width: 18px;
     }
 
     @media (max-width: 600px) {
@@ -126,6 +134,12 @@ body {
 
         &:not(:last-child) {
             margin-right: 16px;
+        }
+
+        &:hover {
+            #facebook, #linkedin, #twitter, #instagram {          
+                fill: $primary-color-light;           
+            }
         }
     }
 }
@@ -149,6 +163,16 @@ main {
     .jobs {
         &:not(:first-child) {
             margin-top: 80px;
+        }
+
+        h2 {
+            font-size: 24px;
+            line-height: 30px;
+    
+            @media(max-width: 800px) {
+                font-size: 18px;
+                line-height: 23px;
+            }   
         }
     }
 
