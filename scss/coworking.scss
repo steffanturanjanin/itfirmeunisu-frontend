@@ -88,7 +88,6 @@ main {
         }
 
         bottom: -10px;
-        //left: -155px;
         background-image: url("/dist/images/symbols/symbols.svg");
         background-repeat: no-repeat;
         transform: rotate(90deg) scaleY(-1);
@@ -99,7 +98,6 @@ main {
     display: flex;
     align-items: center;
     
-
     @media (max-width: 1100px) {           
         flex-direction: column;
         padding-bottom: 220px;
@@ -107,7 +105,6 @@ main {
 
     img {
         max-width: 100%;
-        min-width: 320px;
         height: auto;
 
         @media (max-width: 1100px) {   
@@ -133,7 +130,6 @@ main {
     &.stretched {
         position: relative;
         justify-content: space-between;
-        height: auto;
     }
 
     &.centered {
@@ -145,7 +141,7 @@ main {
             flex-direction: row-reverse;
 
             img {
-                padding-right: 120px;
+                margin-right: 120px;
             }
         }      
     }

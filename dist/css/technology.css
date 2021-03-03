@@ -1,34 +1,42 @@
 @font-face {
-  font-family: GoogleSansRegular;
+  font-family: GoogleSans;
   src: url(/dist/fonts/Google-Sans-Fonts/GoogleSans-Regular.ttf);
   font-display: swap;
+  font-style: normal;
+  font-weight: normal;
   text-transform: none;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 @font-face {
-  font-family: GoogleSansMedium;
+  font-family: GoogleSans;
   src: url(/dist/fonts/Google-Sans-Fonts/GoogleSans-Medium.ttf);
   font-display: swap;
+  font-style: normal;
+  font-weight: 500;
   text-transform: none;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 @font-face {
-  font-family: GoogleSansBold;
+  font-family: GoogleSans;
   src: url(/dist/fonts/Google-Sans-Fonts/GoogleSans-Bold.ttf);
   font-display: swap;
+  font-style: normal;
+  font-weight: bold;
   text-transform: none;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 @font-face {
-  font-family: LatoBold;
+  font-family: Lato;
   src: url(/dist/fonts/Lato/Lato-Bold.ttf);
   font-display: swap;
+  font-style: normal;
+  font-weight: bold;
   text-transform: none;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -47,7 +55,7 @@ body {
           box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'GoogleSansRegular', 'Open Sans', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: 'GoogleSans', 'Lato' 'Open Sans', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 a {
@@ -129,7 +137,7 @@ a {
   line-height: 19px;
   color: #14163A;
   text-decoration: none;
-  font-family: 'GoogleSansBold';
+  font-weight: bold;
 }
 
 .submenu .submenu__item.active {
@@ -405,7 +413,7 @@ header.open .nav__menu {
 .nav__item-link {
   color: inherit;
   text-decoration: none;
-  font-family: 'GoogleSansBold';
+  font-weight: bold;
 }
 
 .hamburger {
@@ -572,6 +580,7 @@ footer .footer-content .contact {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-bottom: 40px;
+  font-weight: bold;
 }
 
 @media (min-width: 1100px) {
@@ -595,7 +604,6 @@ footer .footer-content .contact p {
   font-size: 16px;
   letter-spacing: 0;
   line-height: 20px;
-  font-family: 'GoogleSansBold';
 }
 
 footer .footer-content .contact a {
@@ -605,7 +613,6 @@ footer .footer-content .contact a {
   line-height: 20px;
   text-decoration: none;
   cursor: pointer;
-  font-family: 'GoogleSansBold';
 }
 
 footer h2 {
@@ -625,7 +632,7 @@ footer h2 {
 .primary-button {
   color: #FFFFFF;
   font-size: 16px;
-  font-family: 'GoogleSansBold';
+  font-weight: bold;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -701,7 +708,7 @@ footer h2 {
 
 .tag {
   text-decoration: none;
-  font-family: 'GoogleSansBold';
+  font-weight: bold;
   letter-spacing: 0;
   border-radius: 2px;
 }
@@ -790,10 +797,10 @@ footer h2 {
 .link {
   color: #5D6BF6;
   font-size: 14px;
+  font-weight: bold;
   letter-spacing: 0;
   line-height: 18px;
   text-decoration: none;
-  font-family: 'GoogleSansBold';
   cursor: pointer;
 }
 
@@ -873,7 +880,6 @@ main .search__form .search__field {
     border-color: #E1E1EE;
     border-width: 0 0 1px;
     background: transparent;
-    font-family: GoogleSansRegular;
     font-size: 16px;
     letter-spacing: 0;
     line-height: 24px;
@@ -1028,6 +1034,8 @@ main .companies-container {
   padding-bottom: 64px;
   -webkit-column-gap: 8px;
           column-gap: 8px;
+  font-family: 'Lato';
+  font-weight: bold;
 }
 
 .pagination .pagination-left {
@@ -1087,7 +1095,6 @@ main .companies-container {
       -ms-flex-pack: center;
           justify-content: center;
   font-size: 14px;
-  font-family: 'LatoBold';
   letter-spacing: 0;
   line-height: 17px;
   text-align: center;
@@ -1102,7 +1109,8 @@ main .companies-container {
 }
 
 h1, h2, h3, h4, h5 {
-  font-family: 'GoogleSansBold';
+  font-family: 'GoogleSans';
+  font-weight: bold;
   letter-spacing: 0;
 }
 
@@ -1115,14 +1123,6 @@ h1, h2, h3, h4, h5 {
 .font-ghost {
   color: #14163A;
   opacity: 0.7;
-}
-
-.ff-b {
-  font-family: 'GoogleSansBold';
-}
-
-.ff-m {
-  font-family: 'GoogleSansMedium';
 }
 
 .fc-dark {
@@ -1186,5 +1186,9 @@ body {
   width: 60px;
   background-color: #5D6BF6;
   margin: 32px 0px 24px 0px;
+}
+
+.hero .font-primary {
+  font-weight: 500;
 }
 /*# sourceMappingURL=technology.css.map */

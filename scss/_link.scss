@@ -2,10 +2,10 @@
 .link {
     color: $primary-color-light;
     font-size: 14px;
+    font-weight: bold;
     letter-spacing: 0;
     line-height: 18px;
     text-decoration: none;
-    font-family: 'GoogleSansBold';
     cursor: pointer;
 
     &:hover {

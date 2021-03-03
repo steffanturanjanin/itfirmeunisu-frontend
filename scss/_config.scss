@@ -7,10 +7,52 @@ $white: #FFFFFF;
 $ghost-white: #F9FAFF;
 $faux-cool-gray: #8487B0;
 
+// @font-face {
+//   font-family: GoogleSansRegular;
+//   src: url(/dist/fonts/Google-Sans-Fonts/GoogleSans-Regular.ttf);
+//   font-display: swap;
+
+//   text-transform: none; // mac ff fix
+//   -webkit-font-smoothing: antialiased; // safari mac nicer
+//   -moz-osx-font-smoothing: grayscale; // fix fatty ff on mac
+// }
+
+// @font-face {
+//   font-family: GoogleSansMedium;
+//   src: url(/dist/fonts/Google-Sans-Fonts/GoogleSans-Medium.ttf);
+//   font-display: swap;
+
+//   text-transform: none; // mac ff fix
+//   -webkit-font-smoothing: antialiased; // safari mac nicer
+//   -moz-osx-font-smoothing: grayscale; // fix fatty ff on mac
+// }
+
+// @font-face {
+//   font-family: GoogleSansBold;
+//   src: url(/dist/fonts/Google-Sans-Fonts/GoogleSans-Bold.ttf);
+//   font-display: swap;
+
+//   text-transform: none; // mac ff fix
+//   -webkit-font-smoothing: antialiased; // safari mac nicer
+//   -moz-osx-font-smoothing: grayscale; // fix fatty ff on mac
+// }
+
+// @font-face {
+//   font-family: LatoBold;
+//   src: url(/dist/fonts/Lato/Lato-Bold.ttf);
+//   font-display: swap;
+
+//   text-transform: none; // mac ff fix
+//   -webkit-font-smoothing: antialiased; // safari mac nicer
+//   -moz-osx-font-smoothing: grayscale; // fix fatty ff on mac
+// }
+
 @font-face {
-  font-family: GoogleSansRegular;
+  font-family: GoogleSans;
   src: url(/dist/fonts/Google-Sans-Fonts/GoogleSans-Regular.ttf);
   font-display: swap;
+  font-style: normal;
+  font-weight: normal;
 
   text-transform: none; // mac ff fix
   -webkit-font-smoothing: antialiased; // safari mac nicer
@@ -18,9 +60,11 @@ $faux-cool-gray: #8487B0;
 }
 
 @font-face {
-  font-family: GoogleSansMedium;
+  font-family: GoogleSans;
   src: url(/dist/fonts/Google-Sans-Fonts/GoogleSans-Medium.ttf);
   font-display: swap;
+  font-style: normal;
+  font-weight: 500;
 
   text-transform: none; // mac ff fix
   -webkit-font-smoothing: antialiased; // safari mac nicer
@@ -28,9 +72,11 @@ $faux-cool-gray: #8487B0;
 }
 
 @font-face {
-  font-family: GoogleSansBold;
+  font-family: GoogleSans;
   src: url(/dist/fonts/Google-Sans-Fonts/GoogleSans-Bold.ttf);
   font-display: swap;
+  font-style: normal;
+  font-weight: bold;
 
   text-transform: none; // mac ff fix
   -webkit-font-smoothing: antialiased; // safari mac nicer
@@ -38,14 +84,17 @@ $faux-cool-gray: #8487B0;
 }
 
 @font-face {
-  font-family: LatoBold;
+  font-family: Lato;
   src: url(/dist/fonts/Lato/Lato-Bold.ttf);
   font-display: swap;
+  font-style: normal;
+  font-weight: bold;
 
   text-transform: none; // mac ff fix
   -webkit-font-smoothing: antialiased; // safari mac nicer
   -moz-osx-font-smoothing: grayscale; // fix fatty ff on mac
 }
+
 
 body {
   background-color: $primary-color;
@@ -59,7 +108,7 @@ body {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'GoogleSansRegular', 'Open Sans', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'GoogleSans', 'Lato' 'Open Sans', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 a {

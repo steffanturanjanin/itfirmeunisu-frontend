@@ -41,6 +41,10 @@ body {
             margin: 32px 0px 24px 0px;
         }
     }
+
+    .font-primary {
+        font-weight: 500;
+    }
 }
 
 .technologies {
@@ -70,7 +74,6 @@ body {
     }
 
     .technology-tag__name {
-        font-family: 'GoogleSansBold';
         font-size: 24px;
         letter-spacing: 0;
         line-height: 30px;
@@ -93,7 +96,6 @@ body {
     }
 
     .technology-tag__count {
-        font-family: 'GoogleSansBold';
         font-size: 20px;
         letter-spacing: 0;
         line-height: 25px;
