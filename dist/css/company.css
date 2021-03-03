@@ -1173,7 +1173,7 @@ main {
   }
 }
 
-.info .company-description {
+.info .company-description .content {
   white-space: pre-line;
   max-width: 760px;
 }
