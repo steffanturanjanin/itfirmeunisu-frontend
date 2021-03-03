@@ -11,18 +11,45 @@ $faux-cool-gray: #8487B0;
   font-family: GoogleSansRegular;
   src: url(/dist/fonts/Google-Sans-Fonts/GoogleSans-Regular.ttf);
   font-display: swap;
+  text-rendering: optimizeLegibility; 
+
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
 }
 
 @font-face {
   font-family: GoogleSansMedium;
   src: url(/dist/fonts/Google-Sans-Fonts/GoogleSans-Medium.ttf);
   font-display: swap;
+  text-rendering: optimizeLegibility; 
+
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
 }
 
 @font-face {
   font-family: GoogleSansBold;
   src: url(/dist/fonts/Google-Sans-Fonts/GoogleSans-Bold.ttf);
   font-display: swap;
+  text-rendering: optimizeLegibility; 
+
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
 }
 
 body {
