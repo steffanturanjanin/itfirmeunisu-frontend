@@ -1,7 +1,7 @@
 footer {
     width: 100%;
     min-width: 360px;
-    height: 501px;
+    height: 485px;
     background-color: $primary-color-dark;
     position: relative;
     color: set-color($primary-color);
@@ -29,7 +29,7 @@ footer {
     }
 
     @include screen-up(screen-sm) {      
-        height: 485px;
+        height: 501px;
     }
 
     .footer-content {

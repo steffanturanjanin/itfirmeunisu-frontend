@@ -486,7 +486,7 @@ header.open .nav__menu {
 footer {
   width: 100%;
   min-width: 360px;
-  height: 501px;
+  height: 485px;
   background-color: #0C0E2E;
   position: relative;
   color: #FFFFFF;
@@ -518,7 +518,7 @@ footer::before {
 
 @media (min-width: 800px) {
   footer {
-    height: 485px;
+    height: 501px;
   }
 }
 
@@ -1166,8 +1166,8 @@ h1, h2, h3, h4, h5 {
   background-repeat: no-repeat;
   background-position: -10% calc(100% - 24px);
   width: 100%;
-  min-width: 360px;
-  height: 360px;
+  min-width: 365px;
+  height: 365px;
   position: relative;
   color: #FFFFFF;
 }

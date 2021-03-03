@@ -486,7 +486,7 @@ header.open .nav__menu {
 footer {
   width: 100%;
   min-width: 360px;
-  height: 501px;
+  height: 485px;
   background-color: #0C0E2E;
   position: relative;
   color: #FFFFFF;
@@ -518,7 +518,7 @@ footer::before {
 
 @media (min-width: 800px) {
   footer {
-    height: 485px;
+    height: 501px;
   }
 }
 
@@ -711,7 +711,7 @@ body {
 
 .hero {
   position: relative;
-  height: 437px;
+  height: 429px;
   min-width: 360px;
   color: #FFFFFF;
 }
