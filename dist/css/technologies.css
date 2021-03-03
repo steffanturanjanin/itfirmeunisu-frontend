@@ -879,6 +879,7 @@ body {
 }
 
 .tag .technology-tag__name {
+  font-family: 'GoogleSansBold';
   font-size: 24px;
   letter-spacing: 0;
   line-height: 30px;
@@ -905,6 +906,7 @@ body {
 }
 
 .tag .technology-tag__count {
+  font-family: 'GoogleSansBold';
   font-size: 20px;
   letter-spacing: 0;
   line-height: 25px;
