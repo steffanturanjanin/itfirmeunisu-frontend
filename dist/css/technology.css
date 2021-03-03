@@ -902,8 +902,8 @@ main .search__form .search__field {
 
 @media (min-width: 800px) {
   main .search__form svg {
-    width: 16px;
-    height: 16px;
+    width: 18px;
+    height: 18px;
     position: absolute;
     left: 0;
     bottom: 10px;
@@ -972,6 +972,8 @@ main .companies-container {
 .company-card .cover-image {
   display: none;
   height: 140px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
 }
 
 @media (min-width: 800px) {
