@@ -37,6 +37,16 @@ $faux-cool-gray: #8487B0;
   -moz-osx-font-smoothing: grayscale; // fix fatty ff on mac
 }
 
+@font-face {
+  font-family: LatoBold;
+  src: url(/dist/fonts/Lato/Lato-Bold.ttf);
+  font-display: swap;
+
+  text-transform: none; // mac ff fix
+  -webkit-font-smoothing: antialiased; // safari mac nicer
+  -moz-osx-font-smoothing: grayscale; // fix fatty ff on mac
+}
+
 body {
   background-color: $primary-color;
   width: 100%;

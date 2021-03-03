@@ -25,6 +25,15 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+@font-face {
+  font-family: LatoBold;
+  src: url(/dist/fonts/Lato/Lato-Bold.ttf);
+  font-display: swap;
+  text-transform: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 body {
   background-color: #14163A;
   width: 100%;

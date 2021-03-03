@@ -25,6 +25,15 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+@font-face {
+  font-family: LatoBold;
+  src: url(/dist/fonts/Lato/Lato-Bold.ttf);
+  font-display: swap;
+  text-transform: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 body {
   background-color: #14163A;
   width: 100%;
@@ -708,6 +717,7 @@ footer h2 {
       -ms-flex-pack: center;
           justify-content: center;
   font-size: 14px;
+  font-family: 'LatoBold';
   letter-spacing: 0;
   line-height: 17px;
   text-align: center;
