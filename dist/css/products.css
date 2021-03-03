@@ -867,7 +867,7 @@ footer h2 {
   text-decoration: none;
   font-size: 14px;
   line-height: 20px;
-  font-family: 'GoogleSansMedium';
+  font-weight: 500;
 }
 
 h1, h2, h3, h4, h5 {
