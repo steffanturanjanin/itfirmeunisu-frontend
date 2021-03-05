@@ -1,7 +1,7 @@
-@import 'card';
-@import 'link';
+// @import 'card';
+// @import 'link';
 
-.startup-container {
+.startup-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     row-gap: 12px;

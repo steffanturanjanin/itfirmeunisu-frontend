@@ -1,0 +1,47 @@
+// @import "config";
+// @import "header";
+// @import "footer";
+// @import "button";
+// @import "pagination";
+// @import "products_grid";
+// @import "text_style";
+
+// body {
+//     background-color: $primary-color;
+//     background-image: url("/dist/images/symbols/symbols.svg");
+//     background-repeat: no-repeat;
+//     background-position: right top;
+// }
+
+.products-title {
+    font-size: 40px;
+    line-height: 51px;
+
+    @media(max-width: 800px) {
+        font-size: 34px;
+        line-height: 46px;
+    }
+}
+
+.hero-products {
+    position: relative;
+    height: 289px;
+    min-width: 360px;
+    color: set-color($primary-color);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.startup-container {
+    background-color: $ghost-white;
+    width: 100%;
+    min-height: 351px;
+    min-width: 360px;
+    margin: auto;
+}
+
+.startup-content {
+    padding-top: 96px;
+}

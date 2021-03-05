@@ -10,9 +10,9 @@
     <link rel="preload" href="/dist/fonts/Lato/Lato-Bold.ttf" as="font" crossorigin="anonymous">
     <link rel="preload" href="/dist/js/_small_screen_menu.js" as="script" crossorigin="anonymous">
     <link rel="icon" type="image/svg" href="/dist/images/favicon/itfn-favicon.svg"/>
-    <link rel="stylesheet" href="/dist/css/homepage.css">
+    <link rel="stylesheet" href="/dist/css/app.css">
 </head>
-<body>
+<body class="homepage-body">
     <header class="container">
         <nav class="nav">
             <a href="/dist/index.html" id="logo" class="nav__logo">
@@ -63,7 +63,7 @@
                         <div class="submenu-nav">
                             <a href="#" class="nav__item-link"> Broj zaposlenih </a>
                             
-                            <svg class="sumbenu-arrow" width="16" height="9" xmlns="http://www.w3.org/2000/svg">
+                            <svg class="sumbenu-arrow" width="16" height="9">
                                 <path d="M16 1.528L14.364 0 8 5.943 1.636 0 0 1.528 8 9z" fill="#FFF" fill-rule="nonzero"/>
                               </svg>
                         </div>
@@ -103,13 +103,11 @@
         </nav>
     </header>
 
-    <section class="hero">
-        <div class="hero__text">
-            <h1 class="home-title"> Niški <strong> it </strong> svet </br> na jednom mestu. </h1> 
-        </div>
+    <section class="hero-homepage">    
+        <h1 class="home-title"> Niški <strong> it </strong> svet </br> na jednom mestu. </h1> 
     </section>
 
-    <main>
+    <main class="companies-container">
         <div class="container">
             <div class="search">
                 <div class="search__count">
@@ -125,7 +123,7 @@
                 </form>
             </div>
 
-            <section class="companies-container">
+            <section class="companies-container__grid">
                 <!-- First row -->
                 <div class="card company-card">
                     <a href="/dist/company.html" aria-label="label">

@@ -1,113 +1,113 @@
-@import "config";
-@import "header";
-@import "footer";
-@import "button";
-@import "tag";
-@import "text_style";
+// // @import "config";
+// // @import "header";
+// // @import "footer";
+// // @import "button";
+// // @import "tag";
+// // @import "text_style";
 
-body {
-    background-color: $primary-color;
-    background-image: url("/dist/images/symbols/symbols.svg");
-    background-repeat: no-repeat;
-    background-position: right top;
-}
+// body {
+//     background-color: $primary-color;
+//     background-image: url("/dist/images/symbols/symbols.svg");
+//     background-repeat: no-repeat;
+//     background-position: right top;
+// }
 
-.technologies-title {
-    font-size: 40px;
-    line-height: 51px;
+// .technologies-title {
+//     font-size: 40px;
+//     line-height: 51px;
 
-    @media(max-width: 800px) {
-        font-size: 34px;
-        line-height: 46px;
-    }
-}
+//     @media(max-width: 800px) {
+//         font-size: 34px;
+//         line-height: 46px;
+//     }
+// }
 
-.hero {
-    //position: relative;
-    height: 424px;
-    min-width: 360px;
-    color: set-color($primary-color);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+// .hero-technologies {
+//     //position: relative;
+//     height: 424px;
+//     min-width: 360px;
+//     color: set-color($primary-color);
 
-    &__text {
-        max-width: 570px;
-       
-        &__separator {
-            height: 4px;
-            width: 60px;
-            background-color: $primary-color-light;
-            margin: 32px 0px 24px 0px;
-        }
-    }
+//     display: flex;
+//     align-items: center;
 
-    .font-primary {
-        font-weight: 500;
-    }
-}
+//     &__text {
+//         max-width: 570px;
+//     }
 
-.technologies {
-    width: 100%;
-    color: set-color($primary-color);
+//     .hero-separator {
+//         height: 4px;
+//         width: 60px;
+//         background-color: $primary-color-light;
+//         margin: 32px 0px 24px 0px;
+//     }
 
-    h2 {
-        font-size: 24px;
-        line-height: 30px;
+//     .font-primary {
+//         font-weight: 500;
+//     }
+// }
 
-        @media(max-width: 800px) {
-            font-size: 18px;
-            line-height: 23px;
-        }
-    }
-}
+// .technologies-container {
+//     width: 100%;
+//     color: set-color($primary-color);
 
-.tag {
-    svg {
-        height: 28px;
-        width: 28px;
+//     h2 {
+//         font-size: 24px;
+//         line-height: 30px;
 
-        @media (max-width: 600px) {
-            height: 20px;
-            width: 20px;
-        }
-    }
+//         @media(max-width: 800px) {
+//             font-size: 18px;
+//             line-height: 23px;
+//         }
+//     }
+// }
 
-    .technology-tag__name {
-        font-size: 24px;
-        letter-spacing: 0;
-        line-height: 30px;
-        margin-left: 12px;
-        margin-right: 24px;
+// .tag {
+//     svg {
+//         height: 28px;
+//         width: 28px;
 
-        @media (max-width: 1100px) {
-            font-size: 18px;
-            line-height: 25px;
-            margin-left: 8px;
-            margin-right: 20px;
-        }
+//         @media (max-width: 600px) {
+//             height: 20px;
+//             width: 20px;
+//         }
+//     }
 
-        @media (max-width: 600px) {
-            font-size: 14px;
-            line-height: 20px;
-            margin-left: 6px;
-            margin-right: 12px;
-        }
-    }
+//     .technology-tag__name {
+//         font-size: 24px;
+//         letter-spacing: 0;
+//         line-height: 30px;
+//         margin-left: 12px;
+//         margin-right: 24px;
 
-    .technology-tag__count {
-        font-size: 20px;
-        letter-spacing: 0;
-        line-height: 25px;
+//         @media (max-width: 1100px) {
+//             font-size: 18px;
+//             line-height: 25px;
+//             margin-left: 8px;
+//             margin-right: 20px;
+//         }
 
-        @media (max-width: 1100px) {
-            font-size: 16px;
-            line-height: 20px;
-        }
+//         @media (max-width: 600px) {
+//             font-size: 14px;
+//             line-height: 20px;
+//             margin-left: 6px;
+//             margin-right: 12px;
+//         }
+//     }
 
-        @media (max-width: 600px) {
-            font-size: 12px;
-            line-height: 18px;
-        }
-    }
-}
+//     .technology-tag__count {
+//         font-size: 20px;
+//         letter-spacing: 0;
+//         line-height: 25px;
+
+//         @media (max-width: 1100px) {
+//             font-size: 16px;
+//             line-height: 20px;
+//         }
+
+//         @media (max-width: 600px) {
+//             font-size: 12px;
+//             line-height: 18px;
+//         }
+//     }
+// }
