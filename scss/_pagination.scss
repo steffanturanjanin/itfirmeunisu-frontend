@@ -20,7 +20,6 @@
     .pagination-left, .pagination-right {
         height: 28px;
         width: 28px;
-        margin-right: 16px;
         border-radius: 50%;
         border: 1px solid $primary-color-light;
         display: flex;
@@ -34,6 +33,14 @@
                 fill: white;
             }
         }
+    }
+
+    .pagination-left {
+        margin-right: 16px;
+    }
+
+    .pagination-right {
+        margin-left: 16px;
     }
 
     .page {

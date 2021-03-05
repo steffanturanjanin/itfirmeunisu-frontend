@@ -1171,7 +1171,6 @@ footer h2 {
 .pagination .pagination-left, .pagination .pagination-right {
   height: 28px;
   width: 28px;
-  margin-right: 16px;
   border-radius: 50%;
   border: 1px solid #5D6BF6;
   display: -webkit-box;
@@ -1191,6 +1190,14 @@ footer h2 {
 
 .pagination .pagination-left:hover #leftPaginationArrow, .pagination .pagination-left:hover #rightPaginationArrow, .pagination .pagination-right:hover #leftPaginationArrow, .pagination .pagination-right:hover #rightPaginationArrow {
   fill: white;
+}
+
+.pagination .pagination-left {
+  margin-right: 16px;
+}
+
+.pagination .pagination-right {
+  margin-left: 16px;
 }
 
 .pagination .page {
