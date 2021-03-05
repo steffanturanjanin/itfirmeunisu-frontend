@@ -33,6 +33,14 @@
                 fill: white;
             }
         }
+
+        &:focus {
+            background-color: transparent;
+
+            #leftPaginationArrow, #rightPaginationArrow {
+                fill: $primary-color-light;
+            }
+        }
     }
 
     .pagination-left {

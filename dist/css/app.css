@@ -1192,6 +1192,14 @@ footer h2 {
   fill: white;
 }
 
+.pagination .pagination-left:focus, .pagination .pagination-right:focus {
+  background-color: transparent;
+}
+
+.pagination .pagination-left:focus #leftPaginationArrow, .pagination .pagination-left:focus #rightPaginationArrow, .pagination .pagination-right:focus #leftPaginationArrow, .pagination .pagination-right:focus #rightPaginationArrow {
+  fill: #5D6BF6;
+}
+
 .pagination .pagination-left {
   margin-right: 16px;
 }
