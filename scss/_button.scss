@@ -4,8 +4,12 @@
     font-weight: bold;
     width: fit-content;
     border-radius: 4px;
-    background-color: #5D6BF6;
+    background-color: $primary-color-light;
     padding: 9px 57px 9px 58px;
     line-height: 28px;
     cursor: pointer;
+
+    &:hover {
+      background-color: #6976FF;
+    }
   }

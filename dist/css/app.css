@@ -58,7 +58,7 @@ body {
           box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'GoogleSans', 'Lato', Halvetica, Tahoma, Verdana, Georgia, sans-serif;
+  font-family: 'GoogleSans', 'Lato', Helvetica, Tahoma, Verdana, Georgia, sans-serif;
 }
 
 a {
@@ -74,7 +74,6 @@ a {
 }
 
 h1, h2, h3, h4, h5 {
-  font-family: 'GoogleSans';
   font-weight: bold;
   letter-spacing: 0;
 }
@@ -120,13 +119,16 @@ h1, h2, h3, h4, h5 {
   cursor: pointer;
 }
 
+.primary-button:hover {
+  background-color: #6976FF;
+}
+
 .link {
   color: #5D6BF6;
   font-size: 14px;
   font-weight: bold;
   letter-spacing: 0;
   line-height: 18px;
-  text-decoration: none;
   cursor: pointer;
 }
 
@@ -253,12 +255,12 @@ h1, h2, h3, h4, h5 {
           align-items: center;
 }
 
-.sumbenu-arrow {
+.submenu-arrow {
   display: none;
 }
 
 @media (max-width: 800px) {
-  .sumbenu-arrow {
+  .submenu-arrow {
     display: block;
   }
 }
@@ -687,7 +689,6 @@ footer .footer-content .contact a {
   font-size: 16px;
   letter-spacing: 0;
   line-height: 20px;
-  text-decoration: none;
   cursor: pointer;
 }
 
@@ -1137,19 +1138,17 @@ footer h2 {
 }
 
 .startup-card .company-links__profile {
-  text-decoration: none;
   font-size: 14px;
   line-height: 20px;
   font-weight: 500;
 }
 
-.pagination-left, .pagination-right, .page {
+.page {
   cursor: pointer;
   text-decoration: none;
 }
 
-.pagination-left:hover, .pagination-right:hover, .page:hover {
-  color: #040b50;
+.page:hover {
   text-decoration: underline;
 }
 
@@ -1169,7 +1168,7 @@ footer h2 {
   font-weight: bold;
 }
 
-.pagination .pagination-left {
+.pagination .pagination-left, .pagination .pagination-right {
   height: 28px;
   width: 28px;
   margin-right: 16px;
@@ -1186,31 +1185,12 @@ footer h2 {
           justify-content: center;
 }
 
-.pagination .pagination-left img {
-  height: 10px;
-  width: 6.15px;
+.pagination .pagination-left:hover, .pagination .pagination-right:hover {
+  background-color: #5D6BF6;
 }
 
-.pagination .pagination-right {
-  height: 28px;
-  width: 28px;
-  margin-left: 16px;
-  border-radius: 50%;
-  border: 1px solid #5D6BF6;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.pagination .pagination-right img {
-  height: 10px;
-  width: 6.15px;
+.pagination .pagination-left:hover #leftPaginationArrow, .pagination .pagination-left:hover #rightPaginationArrow, .pagination .pagination-right:hover #leftPaginationArrow, .pagination .pagination-right:hover #rightPaginationArrow {
+  fill: white;
 }
 
 .pagination .page {
@@ -1237,6 +1217,11 @@ footer h2 {
   background-color: #5D6BF6;
   border-radius: 50%;
   border: 1px solid #5D6BF6;
+}
+
+.pagination .page.selected:hover {
+  background-color: #6976FF;
+  border-color: #6976FF;
 }
 
 .homepage-body {
