@@ -1,0 +1,24 @@
+// Partials
+@import "media";
+@import "config";
+@import "text_style";
+@import "button";
+@import "link";
+@import "animations";
+@import "submenu";
+@import "header";
+@import "footer";
+@import "tag";
+@import "card";
+@import "companies_grid";
+@import "products_grid";
+@import "pagination";
+
+
+// Pages
+@import "./pages/homepage";
+@import "./pages/company";
+@import "./pages/coworking";
+@import "./pages/products";
+@import "./pages/technologies";
+@import "./pages/technology";

@@ -1,4 +1,4 @@
-@import "media";
+// @import "media";
 
 $primary-color: #14163A;
 $primary-color-light: #5D6BF6;
@@ -55,20 +55,23 @@ $faux-cool-gray: #8487B0;
   -moz-osx-font-smoothing: grayscale; // fix fatty ff on mac
 }
 
-
 body {
   background-color: $primary-color;
   width: 100%;
   min-width: 360px;
   position: relative;
   z-index: 1;
+  
+  background-image: url("/dist/images/symbols/symbols.svg");
+  background-repeat: no-repeat;
+  background-position: right top;
 }
 
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'GoogleSans', 'Lato', 'Open Sans', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'GoogleSans', 'Lato', Helvetica, Tahoma, Verdana, Georgia, sans-serif;
 }
 
 a {
@@ -82,7 +85,6 @@ a {
   margin: 0 auto;
   padding: 0 24px;
 }
-
 
 @function set-color($color) {
     @if (lightness($color) > 40) {

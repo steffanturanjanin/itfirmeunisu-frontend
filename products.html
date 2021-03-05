@@ -7,12 +7,12 @@
     <title> IT firme u Nišu | Proizvodi </title>
     <link rel="preload" href="/dist/js/_small_screen_menu.js" as="script" crossorigin="anonymous">
     <link rel="icon" type="image/svg" href="/dist/images/favicon/itfn-favicon.svg"/>
-    <link rel="stylesheet" href="/dist/css/products.css">
+    <link rel="stylesheet" href="/dist/css/app.css">
 </head>
 <body>
     <header class="container">
         <nav class="nav">
-            <a href="/dist/index.html" id="logo" class="nav__logo">
+            <a href="index.html" id="logo" class="nav__logo">
                 <svg width="209" height="28" viewBox="0 0 209 28">
                     <g fill-rule="evenodd">
                       <g  fill="#fff">
@@ -35,23 +35,23 @@
                 <div class="nav__container">                
                     <div class="nav__item has-submenu">
 
-                        <a href="/dist/technologies.html" class="nav__item-link"> Tehnologije </a>
+                        <a href="technologies.html" class="nav__item-link"> Tehnologije </a>
 
                         <div class="submenu collapsed">
                             <div class="submenu__column">
-                                <a href="/dist/technology.html" class="submenu__item">PHP</a>
-                                <a href="/dist/technology.html" class="submenu__item">JavaScript</a>
-                                <a href="/dist/technology.html" class="submenu__item">Loremipsum</a>
-                                <a href="/dist/technology.html" class="submenu__item">Dolorsit</a>
-                                <a href="/dist/technology.html" class="submenu__item">Ametneque</a>
-                                <a href="/dist/technology.html" class="submenu__item">Loremipsum</a>
-                                <a href="/dist/technology.html" class="submenu__item">Dolorsit</a>
+                                <a href="technology.html" class="submenu__item">PHP</a>
+                                <a href="technology.html" class="submenu__item">JavaScript</a>
+                                <a href="technology.html" class="submenu__item">Loremipsum</a>
+                                <a href="technology.html" class="submenu__item">Dolorsit</a>
+                                <a href="technology.html" class="submenu__item">Ametneque</a>
+                                <a href="technology.html" class="submenu__item">Loremipsum</a>
+                                <a href="technology.html" class="submenu__item">Dolorsit</a>
                             </div>
 
                             <div class="submenu__column">
-                                <a href="/dist/technology.html" class="submenu__item">PHP</a>
-                                <a href="/dist/technology.html" class="submenu__item">JavaScript</a>
-                                <a href="/dist/technology.html" class="submenu__item">Loremipsum</a>
+                                <a href="technology.html" class="submenu__item">PHP</a>
+                                <a href="technology.html" class="submenu__item">JavaScript</a>
+                                <a href="technology.html" class="submenu__item">Loremipsum</a>
                             </div>
                         </div>
                     </div>
@@ -60,55 +60,53 @@
                         <div class="submenu-nav">
                             <a href="#" class="nav__item-link"> Broj zaposlenih </a>
                             
-                            <svg class="sumbenu-arrow" width="16" height="9" xmlns="http://www.w3.org/2000/svg">
+                            <svg class="submenu-arrow" width="16" height="9">
                                 <path d="M16 1.528L14.364 0 8 5.943 1.636 0 0 1.528 8 9z" fill="#FFF" fill-rule="nonzero"/>
-                              </svg>
+                            </svg>
                         </div>
 
                         <div class="submenu collapsed">
                             <div class="submenu__column">
-                                <a href="/dist/technology.html" class="submenu__item">1-10 zaposlenih</a>
-                                <a href="/dist/technology.html" class="submenu__item">11-20 zaposlenih</a>
-                                <a href="/dist/technology.html" class="submenu__item">21-50 zaposlenih</a>                         
+                                <a href="technology.html" class="submenu__item">1-10 zaposlenih</a>
+                                <a href="technology.html" class="submenu__item">11-20 zaposlenih</a>
+                                <a href="technology.html" class="submenu__item">21-50 zaposlenih</a>                         
                             </div>
                         </div>
                     </div>
 
                     <div class="nav__item">
-                        <a href="/dist/technology.html" class="nav__item-link"> Jobs </a>
+                        <a href="technology.html" class="nav__item-link"> Jobs </a>
                     </div>
 
                     <div class="nav__item">
-                        <a href="/dist/coworking.html" class="nav__item-link"> Co-working </a>
+                        <a href="coworking.html" class="nav__item-link"> Co-working </a>
                     </div>
 
                     <div class="nav__item active">
-                        <a href="/dist/products.html" class="nav__item-link"> Startups </a>
+                        <a href="products.html" class="nav__item-link"> Startups </a>
                     </div>
                 </div>
             </div>
 
-            <button id="btnHamburger" class="nav__menu-hamburger">       
-                <svg id="btnHamburger__open" class="hamburger visible" width="22" height="14" xmlns="http://www.w3.org/2000/svg">
+            <button aria-label="Open or close mobile navigation" id="btnHamburger" class="nav__menu-hamburger">       
+                <svg id="btnHamburger__open" class="hamburger visible" width="22" height="14">
                     <path d="M22 11.667V14H0v-2.333h22zm0-5.834v2.334H0V5.833h22zM22 0v2.333H0V0h22z" fill="#FFF" fill-rule="nonzero"/>
                 </svg>
 
-                <svg id="btnHamburger__close" class="hamburger invisible" fill="#fff" height="18" viewBox="0 0 386.667 386.667" width="18" xmlns="http://www.w3.org/2000/svg">
+                <svg id="btnHamburger__close" class="hamburger invisible" fill="#fff" height="18" viewBox="0 0 386.667 386.667" width="18">
                     <path d="M386.667 45.564L341.103 0l-147.77 147.769L45.564 0 0 45.564l147.769 147.769L0 341.103l45.564 45.564 147.769-147.769 147.769 147.769 45.564-45.564-147.768-147.77z"/>
                 </svg>
             </button>
         </nav>
     </header>
 
-    <section class="hero">
-        <div class="hero__text">
-            <h1 class="products-title"> Startups </h1> 
-        </div>
+    <section class="hero-products">
+        <h1 class="products-title"> Startups </h1> 
     </section>
 
-    <main>
+    <main class="startup-container">
         <div class="container startup-content">
-            <section class="startup-container">
+            <section class="startup-grid">
                 <!-- First row -->
                 <div class="card startup-card">
                     <img width="132" height="40px" alt="" src="/dist/images/products/toggl.png" alt="#" class="startup-logo"/>
@@ -119,7 +117,7 @@
                     
                     <div class="company-links">
                         <a href="#" target="_blank" class="link"> Visit website </a>
-                        <a href="/dist/company.html" target="_blank" class="company-links__profile font-ghost"> @Neopix </a>                 
+                        <a href="company.html" target="_blank" class="company-links__profile font-ghost"> @Neopix </a>                 
                     </div>
                 </div>
 
@@ -132,7 +130,7 @@
                     
                     <div class="company-links">
                         <a href="#" target="_blank" class="link"> Visit website </a>
-                        <a href="/dist/company.html" target="_blank" class="company-links__profile font-ghost"> @Neopix </a>                 
+                        <a href="company.html" target="_blank" class="company-links__profile font-ghost"> @Neopix </a>                 
                     </div>
                 </div>
 
@@ -145,7 +143,7 @@
                     
                     <div class="company-links">
                         <a href="#" target="_blank" class="link"> Visit website </a>
-                        <a href="/dist/company.html" target="_blank" class="company-links__profile  font-ghost"> @H-Tech </a>                 
+                        <a href="company.html" target="_blank" class="company-links__profile  font-ghost"> @H-Tech </a>                 
                     </div>
                 </div>
 
@@ -159,7 +157,7 @@
                     
                     <div class="company-links">
                         <a href="#" target="_blank" class="link"> Visit website </a>
-                        <a href="/dist/company.html" target="_blank" class="company-links__profile font-ghost"> @Neopix </a>                 
+                        <a href="company.html" target="_blank" class="company-links__profile font-ghost"> @Neopix </a>                 
                     </div>
                 </div>
 
@@ -172,7 +170,7 @@
                     
                     <div class="company-links">
                         <a href="#" class="link"> Visit website </a>
-                        <a href="/dist/company.html" class="company-links__profile  font-ghost"> @Neopix </a>
+                        <a href="company.html" class="company-links__profile  font-ghost"> @Neopix </a>
                     </div>
                 </div>
 
@@ -185,7 +183,7 @@
                     
                     <div class="company-links">
                         <a href="#" target="_blank" class="link"> Visit website </a>
-                        <a href="/dist/company.html" target="_blank" class="company-links__profile font-ghost"> @H-Tech </a>                 
+                        <a href="company.html" target="_blank" class="company-links__profile font-ghost"> @H-Tech </a>                 
                     </div>
                 </div>
 
@@ -199,7 +197,7 @@
                     
                     <div class="company-links">
                         <a href="#" target="_blank" class="link"> Visit website </a>
-                        <a href="/dist/company.html" target="_blank" class="company-links__profile font-ghost"> @Neopix </a>                 
+                        <a href="company.html" target="_blank" class="company-links__profile font-ghost"> @Neopix </a>                 
                     </div>
                 </div>
 
@@ -212,7 +210,7 @@
                     
                     <div class="company-links">
                         <a href="#" target="_blank" class="link"> Visit website </a>
-                        <a href="/dist/company.html" target="_blank" class="company-links__profile font-ghost"> @Neopix </a>                 
+                        <a href="company.html" target="_blank" class="company-links__profile font-ghost"> @Neopix </a>                 
                     </div>
                 </div>
 
@@ -225,7 +223,7 @@
                     
                     <div class="company-links">
                         <a href="#" target="_blank" class="link"> Visit website </a>
-                        <a href="/dist/company.html" target="_blank" class="company-links__profile font-ghost"> @H-Tech </a>                 
+                        <a href="company.html" target="_blank" class="company-links__profile font-ghost"> @H-Tech </a>                 
                     </div>
                 </div>
 
@@ -239,7 +237,7 @@
                     
                     <div class="company-links">
                         <a href="#" target="_blank" class="link"> Visit website </a>
-                        <a href="/dist/company.html" target="_blank" class="company-links__profile font-ghost"> @Neopix </a>                 
+                        <a href="company.html" target="_blank" class="company-links__profile font-ghost"> @Neopix </a>                 
                     </div>
                 </div>
 
@@ -252,7 +250,7 @@
                     
                     <div class="company-links">
                         <a href="#" target="_blank" class="link"> Visit website </a>
-                        <a href="/dist/company.html" target="_blank" class="company-links__profile font-ghost"> @Neopix </a>                 
+                        <a href="company.html" target="_blank" class="company-links__profile font-ghost"> @Neopix </a>                 
                     </div>
                 </div>
 
@@ -265,16 +263,16 @@
                     
                     <div class="company-links">
                         <a href="#" target="_blank" class="link"> Visit website </a>
-                        <a href="/dist/company.html" target="_blank" class="company-links__profile font-ghost"> @H-Tech </a>                 
+                        <a href="company.html" target="_blank" class="company-links__profile font-ghost"> @H-Tech </a>                 
                     </div>
                 </div>
 
             </section>
 
             <div class="pagination">
-                <a href="#" class="pagination-left">
-                    <svg width="7" height="10" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M5.849.299a1.052 1.052 0 00-1.47 0L.304 4.285c-.195.19-.305.45-.305.72 0 .27.11.528.305.719L4.38 9.708c.407.392 1.06.389 1.464-.007a1 1 0 00.005-1.431L2.51 5.004 5.85 1.737c.195-.19.305-.449.305-.72 0-.27-.11-.528-.305-.718z" fill="#5D6BF6" fill-rule="evenodd"/>
+                <a href="#" class="pagination-left" aria-label="label">
+                    <svg width="7" height="10">
+                        <path id="leftPaginationArrow" d="M5.849.299a1.052 1.052 0 00-1.47 0L.304 4.285c-.195.19-.305.45-.305.72 0 .27.11.528.305.719L4.38 9.708c.407.392 1.06.389 1.464-.007a1 1 0 00.005-1.431L2.51 5.004 5.85 1.737c.195-.19.305-.449.305-.72 0-.27-.11-.528-.305-.718z" fill="#5D6BF6" fill-rule="evenodd"/>
                     </svg>
                 </a>
                 <a href="#" class="page">
@@ -286,9 +284,9 @@
                 <a href="#" class="page">
                     3
                 </a>
-                <a href="#" class="pagination-right">
-                    <svg width="7" height="10" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1.151.299a1.052 1.052 0 011.47 0l4.074 3.986c.195.19.305.45.305.72 0 .27-.11.528-.305.719L2.62 9.708a1.055 1.055 0 01-1.464-.007 1 1 0 01-.005-1.431L4.49 5.004 1.15 1.737a1.006 1.006 0 01-.305-.72c0-.27.11-.528.305-.718z" fill="#5D6BF6" fill-rule="evenodd"/>
+                <a href="#" class="pagination-right" aria-label="label">
+                    <svg width="7" height="10">
+                        <path id="rightPaginationArrow" d="M1.151.299a1.052 1.052 0 011.47 0l4.074 3.986c.195.19.305.45.305.72 0 .27-.11.528-.305.719L2.62 9.708a1.055 1.055 0 01-1.464-.007 1 1 0 01-.005-1.431L4.49 5.004 1.15 1.737a1.006 1.006 0 01-.305-.72c0-.27.11-.528.305-.718z" fill="#5D6BF6" fill-rule="evenodd"/>
                     </svg>
                 </a>
             </div>
@@ -299,15 +297,14 @@
     <footer>
         <div class="container footer-content">
             <h2>Pogledaj i sve proizvode niških start-up timova.</h2>
-            <a href="/dist/products.html" href="#" class="primary-button">Saznaj više</a>
-            <div class="contact ff-b"> 
+            <a href="products.html" href="#" class="primary-button">Saznaj više</a>
+            <div class="contact"> 
                 <a href="#">Contact</a>
                 <p>All rights reserved. itfirmeunisu.rs</p>
             </div>
         </div>
     </footer>
+
+    <script type="module" src="/dist/js/index.js"></script>
 </body>
-
-<script type="module" src="/dist/js/index.js"></script>
-
 </html>

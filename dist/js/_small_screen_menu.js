@@ -1,4 +1,4 @@
-const btnHumburger = document.getElementById('btnHamburger');
+const btnHamburger = document.getElementById('btnHamburger');
 const btnHamburgerOpen = document.getElementById("btnHamburger__open");
 const btnHamburgerClose = document.getElementById("btnHamburger__close");
 
@@ -7,7 +7,7 @@ const subMenus = Array.from(document.getElementsByClassName('submenu'));
 
 export const toggleHamburgerEventListener = () => {
     
-    btnHumburger.addEventListener('click', () => {
+    btnHamburger.addEventListener('click', () => {
 
         if (header.classList.contains('open')) {
             btnHamburgerClose.classList.add('invisible');

@@ -1,11 +1,10 @@
-
 .has-submenu {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.sumbenu-arrow {
+.submenu-arrow {
     display: none;
 
     @media(max-width: 800px) {

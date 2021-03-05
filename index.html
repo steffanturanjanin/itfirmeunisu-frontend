@@ -10,12 +10,12 @@
     <link rel="preload" href="/dist/fonts/Lato/Lato-Bold.ttf" as="font" crossorigin="anonymous">
     <link rel="preload" href="/dist/js/_small_screen_menu.js" as="script" crossorigin="anonymous">
     <link rel="icon" type="image/svg" href="/dist/images/favicon/itfn-favicon.svg"/>
-    <link rel="stylesheet" href="/dist/css/homepage.css">
+    <link rel="stylesheet" href="/dist/css/app.css">
 </head>
-<body>
+<body class="homepage-body">
     <header class="container">
         <nav class="nav">
-            <a href="/dist/index.html" id="logo" class="nav__logo">
+            <a href="index.html" id="logo" class="nav__logo">
                 <svg width="209" height="28" viewBox="0 0 209 28">
                     <g fill-rule="evenodd">
                       <g  fill="#fff">
@@ -38,23 +38,23 @@
                 <div class="nav__container">                
                     <div class="nav__item has-submenu">
 
-                        <a href="/dist/technologies.html" class="nav__item-link"> Tehnologije </a>
+                        <a href="technologies.html" class="nav__item-link"> Tehnologije </a>
 
                         <div class="submenu collapsed">
                             <div class="submenu__column">
-                                <a href="/dist/technology.html" class="submenu__item">PHP</a>
-                                <a href="/dist/technology.html" class="submenu__item">JavaScript</a>
-                                <a href="/dist/technology.html" class="submenu__item">Loremipsum</a>
-                                <a href="/dist/technology.html" class="submenu__item">Dolorsit</a>
-                                <a href="/dist/technology.html" class="submenu__item">Ametneque</a>
-                                <a href="/dist/technology.html" class="submenu__item">Loremipsum</a>
-                                <a href="/dist/technology.html" class="submenu__item">Dolorsit</a>
+                                <a href="technology.html" class="submenu__item">PHP</a>
+                                <a href="technology.html" class="submenu__item">JavaScript</a>
+                                <a href="technology.html" class="submenu__item">Loremipsum</a>
+                                <a href="technology.html" class="submenu__item">Dolorsit</a>
+                                <a href="technology.html" class="submenu__item">Ametneque</a>
+                                <a href="technology.html" class="submenu__item">Loremipsum</a>
+                                <a href="technology.html" class="submenu__item">Dolorsit</a>
                             </div>
 
                             <div class="submenu__column">
-                                <a href="/dist/technology.html" class="submenu__item">PHP</a>
-                                <a href="/dist/technology.html" class="submenu__item">JavaScript</a>
-                                <a href="/dist/technology.html" class="submenu__item">Loremipsum</a>
+                                <a href="technology.html" class="submenu__item">PHP</a>
+                                <a href="technology.html" class="submenu__item">JavaScript</a>
+                                <a href="technology.html" class="submenu__item">Loremipsum</a>
                             </div>
                         </div>
                     </div>
@@ -63,30 +63,30 @@
                         <div class="submenu-nav">
                             <a href="#" class="nav__item-link"> Broj zaposlenih </a>
                             
-                            <svg class="sumbenu-arrow" width="16" height="9" xmlns="http://www.w3.org/2000/svg">
+                            <svg class="submenu-arrow" width="16" height="9">
                                 <path d="M16 1.528L14.364 0 8 5.943 1.636 0 0 1.528 8 9z" fill="#FFF" fill-rule="nonzero"/>
-                              </svg>
+                            </svg>
                         </div>
 
                         <div class="submenu collapsed">
                             <div class="submenu__column">
-                                <a href="/dist/technology.html" class="submenu__item">1-10 zaposlenih</a>
-                                <a href="/dist/technology.html" class="submenu__item">11-20 zaposlenih</a>
-                                <a href="/dist/technology.html" class="submenu__item">21-50 zaposlenih</a>                         
+                                <a href="technology.html" class="submenu__item">1-10 zaposlenih</a>
+                                <a href="technology.html" class="submenu__item">11-20 zaposlenih</a>
+                                <a href="technology.html" class="submenu__item">21-50 zaposlenih</a>                         
                             </div>
                         </div>
                     </div>
 
                     <div class="nav__item">
-                        <a href="/dist/technology.html" class="nav__item-link"> Jobs </a>
+                        <a href="technology.html" class="nav__item-link"> Jobs </a>
                     </div>
 
                     <div class="nav__item">
-                        <a href="/dist/coworking.html" class="nav__item-link"> Co-working </a>
+                        <a href="coworking.html" class="nav__item-link"> Co-working </a>
                     </div>
 
                     <div class="nav__item">
-                        <a href="/dist/products.html" class="nav__item-link"> Startups </a>
+                        <a href="products.html" class="nav__item-link"> Startups </a>
                     </div>
                 </div>
             </div>
@@ -103,13 +103,11 @@
         </nav>
     </header>
 
-    <section class="hero">
-        <div class="hero__text">
-            <h1 class="home-title"> Niški <strong> it </strong> svet </br> na jednom mestu. </h1> 
-        </div>
+    <section class="hero-homepage">    
+        <h1 class="home-title"> Niški <strong> it </strong> svet </br> na jednom mestu. </h1> 
     </section>
 
-    <main>
+    <main class="companies-container">
         <div class="container">
             <div class="search">
                 <div class="search__count">
@@ -125,155 +123,154 @@
                 </form>
             </div>
 
-            <section class="companies-container">
+            <section class="companies-container__grid">
                 <!-- First row -->
                 <div class="card company-card">
-                    <a href="/dist/company.html" aria-label="label">
+                    <a href="company.html" aria-label="label">
                         <img width="263" height="140" src="/dist/images/companies/cover-photos/neopix-cover.jpg" alt="slika" class="cover-image">
                     </a>
                     <div class="company-info container">
-                        <a href="/dist/company.html" aria-label="label">
+                        <a href="company.html" aria-label="label">
                             <img width="60" height="60" src="/dist/images/companies/logos/neopix-logo.png" alt="slika" class="logo-image">
                         </a>
                         <div class="company-info__text">
-                            <a href="/dist/company.html" aria-label="label"> 
+                            <a href="company.html" aria-label="label"> 
                                 <h2 class="company-card__title"> Neopix </h2>
                             </a>
                             <a class="link" href="#"> weareneopix.com </a>
                         </div>
                     </div>
                     <div class="tag-container container sm">
-                        <a href="/dist/technology.html" class="tag light"> PHP </a>
-                        <a href="/dist/technology.html" class="tag light"> JavaScript </a>
-                        <a href="/dist/technology.html" class="tag light"> NodeJS </a>
-                        <a href="/dist/technology.html" class="tag light"> Product Design </a>
-                        <a href="/dist/technology.html" class="tag light"> Branding </a>
+                        <a href="technology.html" class="tag light"> PHP </a>
+                        <a href="technology.html" class="tag light"> JavaScript </a>
+                        <a href="technology.html" class="tag light"> NodeJS </a>
+                        <a href="technology.html" class="tag light"> Product Design </a>
+                        <a href="technology.html" class="tag light"> Branding </a>
                         <span class="tag light more-tags"> +8 </span>
-                        <!-- <a href="/dist/technology.html" class="tag light" onclick="preventDefault(event)"> +8 </a> -->
                     </div>
                 </div>
 
                 <div class="card company-card">
-                    <a href="/dist/company.html" aria-label="label">
+                    <a href="company.html" aria-label="label">
                         <img width="263" height="140" src="/dist/images/companies/cover-photos/htec-cover.png" alt="slika" class="cover-image">
                     </a>
                     <div class="company-info container">
-                        <a href="/dist/company.html" aria-label="label">
+                        <a href="company.html" aria-label="label">
                             <img width="60" height="60" src="/dist/images/companies/logos/htec-logo.jpg" alt="slika" class="logo-image">
                         </a>
                         <div class="company-info__text">
-                            <a href="/dist/company.html" aria-label="label">
+                            <a href="company.html" aria-label="label">
                                 <h2 class="company-card__title"> 2i Global Software Solutions doo </h2>
                             </a>
                             <a class="link" href="#"> weareneopix.com </a>
                         </div>
                     </div>
                     <div class="tag-container container sm">
-                        <a href="/dist/technology.html" class="tag light"> PHP </a>
-                        <a href="/dist/technology.html" class="tag light"> JavaScript </a>
-                        <a href="/dist/technology.html" class="tag light"> NodeJS </a>
+                        <a href="technology.html" class="tag light"> PHP </a>
+                        <a href="technology.html" class="tag light"> JavaScript </a>
+                        <a href="technology.html" class="tag light"> NodeJS </a>
                     </div>
                 </div>
         
                 <div class="card company-card">
-                    <a href="/dist/company.html" aria-label="label">
+                    <a href="company.html" aria-label="label">
                         <img width="263" height="140" src="/dist/images/companies/cover-photos/neopix-cover.jpg" alt="slika" class="cover-image">
                     </a>
                     <div class="company-info container">
-                        <a href="/dist/company.html" aria-label="label">
+                        <a href="company.html" aria-label="label">
                             <img width="60" height="60" src="/dist/images/companies/logos/neopix-logo.png" alt="slika" class="logo-image">
                         </a>
                         <div class="company-info__text">
-                            <a href="/dist/company.html" aria-label="label">
+                            <a href="company.html" aria-label="label">
                                 <h2 class="company-card__title">Neopix</h2>
                             </a>
                             <a class="link" href="#">weareneopix.com</a>
                         </div>
                     </div>
                     <div class="tag-container container sm">
-                        <a href="/dist/technology.html" class="tag light"> PHP </a>
-                        <a href="/dist/technology.html" class="tag light"> JavaScript </a>
-                        <a href="/dist/technology.html" class="tag light"> NodeJS </a>
-                        <a href="/dist/technology.html" class="tag light"> Product Design </a>
-                        <a href="/dist/technology.html" class="tag light"> Branding </a>
+                        <a href="technology.html" class="tag light"> PHP </a>
+                        <a href="technology.html" class="tag light"> JavaScript </a>
+                        <a href="technology.html" class="tag light"> NodeJS </a>
+                        <a href="technology.html" class="tag light"> Product Design </a>
+                        <a href="technology.html" class="tag light"> Branding </a>
                         <span class="tag light more-tags"> +8 </span>
                     </div>
                 </div>
 
                 <div class="card company-card">
-                    <a href="/dist/company.html" aria-label="label">
+                    <a href="company.html" aria-label="label">
                         <img width="263" height="140" src="/dist/images/companies/cover-photos/htec-cover.png" alt="slika" class="cover-image">
                     </a>
                     <div class="company-info container">
-                        <a href="/dist/company.html" aria-label="label">
+                        <a href="company.html" aria-label="label">
                             <img width="60" height="60" src="/dist/images/companies/logos/htec-logo.jpg" alt="slika" class="logo-image">
                         </a>
                         <div class="company-info__text">
-                            <a href="/dist/company.html" aria-label="label">
+                            <a href="company.html" aria-label="label">
                                 <h2 class="company-card__title"> 2i Global Software Solutions doo </h2>
                             </a>
                             <a class="link" href="#">weareneopix.com</a>
                         </div>
                     </div>
                     <div class="tag-container container sm">
-                        <a href="/dist/technology.html" class="tag light"> PHP </a>
-                        <a href="/dist/technology.html" class="tag light"> JavaScript </a>
-                        <a href="/dist/technology.html" class="tag light"> NodeJS </a>
+                        <a href="technology.html" class="tag light"> PHP </a>
+                        <a href="technology.html" class="tag light"> JavaScript </a>
+                        <a href="technology.html" class="tag light"> NodeJS </a>
                     </div>
                 </div>
 
                 <div class="card company-card">
-                    <a href="/dist/company.html" aria-label="label">
+                    <a href="company.html" aria-label="label">
                         <img width="263" height="140" src="/dist/images/companies/cover-photos/neopix-cover.jpg" alt="slika" class="cover-image">
                     </a>
                     <div class="company-info container">
-                        <a href="/dist/company.html" aria-label="label">
+                        <a href="company.html" aria-label="label">
                             <img width="60" height="60" src="/dist/images/companies/logos/neopix-logo.png" alt="slika" class="logo-image">
                         </a>
                         <div class="company-info__text">
-                            <a href="/dist/company.html" aria-label="label">
+                            <a href="company.html" aria-label="label">
                                 <h2 class="company-card__title">Neopix</h2>
                             </a>
                             <a class="link" href="#">weareneopix.com</a>
                         </div>
                     </div>
                     <div class="tag-container container sm">
-                        <a href="/dist/technology.html" class="tag light"> PHP </a>
-                        <a href="/dist/technology.html" class="tag light"> JavaScript </a>
-                        <a href="/dist/technology.html" class="tag light"> NodeJS </a>
-                        <a href="/dist/technology.html" class="tag light"> Product Design </a>
-                        <a href="/dist/technology.html" class="tag light"> Branding </a>
+                        <a href="technology.html" class="tag light"> PHP </a>
+                        <a href="technology.html" class="tag light"> JavaScript </a>
+                        <a href="technology.html" class="tag light"> NodeJS </a>
+                        <a href="technology.html" class="tag light"> Product Design </a>
+                        <a href="technology.html" class="tag light"> Branding </a>
                         <span class="tag light more-tags"> +8 </span>
                     </div>
                 </div>
 
                 <div class="card company-card">
-                    <a href="/dist/company.html" aria-label="label">
+                    <a href="company.html" aria-label="label">
                         <img width="263" height="140" src="/dist/images/companies/cover-photos/htec-cover.png" alt="slika" class="cover-image">
                     </a>
                     <div class="company-info container">
-                        <a href="/dist/company.html" aria-label="label">
+                        <a href="company.html" aria-label="label">
                             <img width="60" height="60" src="/dist/images/companies/logos/htec-logo.jpg" alt="slika" class="logo-image">
                         </a>
                         <div class="company-info__text">
-                            <a href="/dist/company.html" aria-label="label">
+                            <a href="company.html" aria-label="label">
                                 <h2 class="company-card__title">2i Global Software Solutions doo</h2>
                             </a>
                             <a class="link" href="#">weareneopix.com</a>
                         </div>
                     </div>
                     <div class="tag-container container sm">
-                        <a href="/dist/technology.html" class="tag light"> PHP </a>
-                        <a href="/dist/technology.html" class="tag light"> JavaScript </a>
-                        <a href="/dist/technology.html" class="tag light"> NodeJS </a>
+                        <a href="technology.html" class="tag light"> PHP </a>
+                        <a href="technology.html" class="tag light"> JavaScript </a>
+                        <a href="technology.html" class="tag light"> NodeJS </a>
                     </div>
                 </div>
             </section>
 
             <div class="pagination">
                 <a href="#" class="pagination-left" aria-label="label">
-                    <svg width="7" height="10" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M5.849.299a1.052 1.052 0 00-1.47 0L.304 4.285c-.195.19-.305.45-.305.72 0 .27.11.528.305.719L4.38 9.708c.407.392 1.06.389 1.464-.007a1 1 0 00.005-1.431L2.51 5.004 5.85 1.737c.195-.19.305-.449.305-.72 0-.27-.11-.528-.305-.718z" fill="#5D6BF6" fill-rule="evenodd"/>
+                    <svg width="7" height="10">
+                        <path id="leftPaginationArrow" d="M5.849.299a1.052 1.052 0 00-1.47 0L.304 4.285c-.195.19-.305.45-.305.72 0 .27.11.528.305.719L4.38 9.708c.407.392 1.06.389 1.464-.007a1 1 0 00.005-1.431L2.51 5.004 5.85 1.737c.195-.19.305-.449.305-.72 0-.27-.11-.528-.305-.718z" fill="#5D6BF6" fill-rule="evenodd"/>
                     </svg>
                 </a>
                 <a href="#" class="page">
@@ -286,8 +283,8 @@
                     3
                 </a>
                 <a href="#" class="pagination-right" aria-label="label">
-                    <svg width="7" height="10" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1.151.299a1.052 1.052 0 011.47 0l4.074 3.986c.195.19.305.45.305.72 0 .27-.11.528-.305.719L2.62 9.708a1.055 1.055 0 01-1.464-.007 1 1 0 01-.005-1.431L4.49 5.004 1.15 1.737a1.006 1.006 0 01-.305-.72c0-.27.11-.528.305-.718z" fill="#5D6BF6" fill-rule="evenodd"/>
+                    <svg width="7" height="10">
+                        <path id="rightPaginationArrow" d="M1.151.299a1.052 1.052 0 011.47 0l4.074 3.986c.195.19.305.45.305.72 0 .27-.11.528-.305.719L2.62 9.708a1.055 1.055 0 01-1.464-.007 1 1 0 01-.005-1.431L4.49 5.004 1.15 1.737a1.006 1.006 0 01-.305-.72c0-.27.11-.528.305-.718z" fill="#5D6BF6" fill-rule="evenodd"/>
                     </svg>
                 </a>
             </div>
@@ -303,7 +300,7 @@
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
                 </article>
     
-                <a href="/dist/coworking.html" class="primary-button">Saznaj više</a>
+                <a href="coworking.html" class="primary-button">Saznaj više</a>
             </div>
 
             <img width="500" height="495" class="coworking__img" src="/dist/images/coworking-homepage/co-working-imgs.png" alt=""/>
@@ -313,15 +310,14 @@
     <footer>
         <div class="container footer-content">
             <h2>Pogledaj i sve proizvode niških start-up timova.</h2>
-            <a href="/dist/products.html" href="#" class="primary-button">Saznaj više</a>
-            <div class="contact ff-b"> 
+            <a href="products.html" href="#" class="primary-button">Saznaj više</a>
+            <div class="contact"> 
                 <a href="#">Contact</a>
                 <p>All rights reserved. itfirmeunisu.rs</p>
             </div>
         </div>
     </footer>
+
+    <script type="module" src="/dist/js/index.js"></script>
 </body>
-
-<script type="module" src="/dist/js/index.js"></script>
-
 </html>
