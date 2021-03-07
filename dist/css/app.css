@@ -864,6 +864,14 @@ footer h2 {
   width: 100%;
   min-width: 360px;
   margin: auto;
+  padding-top: 72px;
+  padding-bottom: 64px;
+}
+
+@media (max-width: 800px) {
+  .companies-container {
+    padding-top: 48px;
+  }
 }
 
 .companies-container .search {
@@ -1257,17 +1265,6 @@ footer h2 {
 
 .hero-homepage strong {
   color: #5D6BF6;
-}
-
-.companies-content {
-  padding-top: 72px;
-  padding-bottom: 64px;
-}
-
-@media (max-width: 800px) {
-  .companies-content {
-    padding-top: 48px;
-  }
 }
 
 .coworking {

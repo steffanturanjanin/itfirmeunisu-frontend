@@ -31,6 +31,12 @@
     width: 100%;
     min-width: 360px;
     margin: auto;
+    padding-top: 72px;
+    padding-bottom: 64px;
+
+    @media (max-width: 800px) {
+        padding-top: 48px;
+    }
 
     .search {
         display: flex;
