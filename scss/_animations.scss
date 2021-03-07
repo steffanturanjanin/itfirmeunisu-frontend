@@ -40,13 +40,11 @@
     animation: fade-out 300ms ease-in-out forwards;
 }
 
-
-@keyframes slide-in {
-    100% { transform: translateX(0%); }
+.slide-up {
+    transition: opacity .4s ease-out .3s;
+    opacity: 0;
 }
 
-
-@keyframes slide-out {
-    0% { transform: translateX(0%); }
-    100% { transform: translateX(-100%); }
+.appear {
+    opacity: 1;
 }

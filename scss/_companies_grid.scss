@@ -36,11 +36,9 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding-top: 48px;
         padding-bottom: 16px;
 
         @include screen-up(screen-sm) {
-            padding-top: 72px;
             padding-bottom: 32px;
         }
 

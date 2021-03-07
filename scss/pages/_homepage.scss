@@ -42,6 +42,15 @@
     }
 }
 
+.companies-content {
+    padding-top: 72px;
+    padding-bottom: 64px;
+
+    @media (max-width: 800px) {
+        padding-top: 48px;
+    }
+}
+
 .coworking {
     width: 100%;
     background-color: white;

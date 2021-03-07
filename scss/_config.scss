@@ -43,18 +43,6 @@ $faux-cool-gray: #8487B0;
   -moz-osx-font-smoothing: grayscale; // fix fatty ff on mac
 }
 
-@font-face {
-  font-family: Lato;
-  src: url(/dist/fonts/Lato/Lato-Bold.ttf);
-  font-display: swap;
-  font-style: normal;
-  font-weight: bold;
-
-  text-transform: none; // mac ff fix
-  -webkit-font-smoothing: antialiased; // safari mac nicer
-  -moz-osx-font-smoothing: grayscale; // fix fatty ff on mac
-}
-
 body {
   background-color: $primary-color;
   width: 100%;
@@ -71,7 +59,7 @@ body {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'GoogleSans', 'Lato', Helvetica, Tahoma, Verdana, Georgia, sans-serif;
+    font-family: 'GoogleSans', Helvetica, Tahoma, Verdana, Georgia, sans-serif;
 }
 
 a {
