@@ -11,7 +11,6 @@
 .hero-technologies {
     //position: relative;
     height: 424px;
-    min-width: 360px;
     color: set-color($primary-color);
 
     display: flex;
@@ -59,7 +58,7 @@
         }
     }
 
-    .technology-tag__name {
+    &__name {
         font-size: 24px;
         letter-spacing: 0;
         line-height: 30px;
@@ -81,7 +80,7 @@
         }
     }
 
-    .technology-tag__count {
+    &__count {
         font-size: 20px;
         letter-spacing: 0;
         line-height: 25px;

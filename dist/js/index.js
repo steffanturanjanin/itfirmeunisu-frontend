@@ -1,24 +1,49 @@
-const header = document.getElementsByTagName('header')[0];
+const header = document.querySelector('#header');
 
-const btnHamburger = document.getElementById('btnHamburger');
-const btnHamburgerOpen = document.getElementById("btnHamburger__open");
-const btnHamburgerClose = document.getElementById("btnHamburger__close");
+const btnHamburger = document.querySelector('#btnHamburger');
+const btnHamburgerOpen = document.querySelector("#btnHamburger__open");
+const btnHamburgerClose = document.querySelector("#btnHamburger__close");
 
-const subMenus = Array.from(document.getElementsByClassName('submenu'));
+const subMenus = Array.from(document.querySelectorAll('#header .has-submenu .submenu'));
 
-window.addEventListener('resize', function(event) {
+const debounce = (func) => {
+	let timeout;
+
+	return function () {
+		const context = this;
+		const args = arguments;
+
+		if (timeout) {
+			clearTimeout(timeout);
+		}
+
+		timeout = setTimeout(function () {
+			func.apply(context, args);
+		}, 500);
+	}
+};
+
+const onWindowResize = (event) => {
+
+    if (!header.classList.contains('open')) {
+        return;
+    }
 
     if (event.target.screen.width > 800 && document.body.style.overflow == 'hidden') {
         document.body.style.overflow = 'scroll';
     }
 
-    if (event.target.screen.width <= 800 && header.classList.contains('open')) {
+    if (event.target.screen.width <= 800 && document.body.style.overflow == 'scroll') {
         document.body.style.overflow = 'hidden';
     }
+}
 
-});
+const onWindowResizeDebounce = debounce((event) => { onWindowResize(event) });
 
-const toggleHumburgerEventCallback = () => {
+window.addEventListener('resize', (event) => { onWindowResizeDebounce(event); });
+
+const toggleHamburgerEventCallback = () => {
+
     if (header.classList.contains('open')) {
         btnHamburgerClose.classList.add('invisible');
         btnHamburgerClose.classList.remove('visible', 'fade-in');
@@ -65,7 +90,7 @@ const toggleSubmenuEventCallback = (subMenu, collapseSpreadArrow) => {
 
 }
 
-btnHamburger.addEventListener('click', toggleHumburgerEventCallback);
+btnHamburger.addEventListener('click', toggleHamburgerEventCallback);
    
 subMenus.forEach(subMenu => {
     const hasSubMenuDiv = subMenu.parentElement;

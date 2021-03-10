@@ -11,7 +11,6 @@
 .hero-coworking {
     position: relative;
     height: 429px;
-    min-width: 360px;
     color: set-color($primary-color);
 
     display: flex;
@@ -47,12 +46,11 @@
     &::before {  
         content: "";
         position: absolute;
-        left:calc((100vw - 1180)/2);
         width: 1160px;
         height: 1154px;
         z-index: -1;
 
-        @media (max-width: 1100px) {
+        @media (max-width: 1200px) {
             width: 550px;
             height: 550px;
         }
@@ -63,7 +61,7 @@
         }
 
         bottom: -10px;
-        background-image: url("/dist/images/symbols/symbols.svg");
+        background-image: url("/dist/images/application/patterns/symbols.svg");
         background-repeat: no-repeat;
         transform: rotate(90deg) scaleY(-1);
     }

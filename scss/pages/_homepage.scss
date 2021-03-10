@@ -14,7 +14,7 @@
 }
 
 .hero-homepage {
-    background-image: url(/dist/images/nis-fortress-ilustration/nis-ilustracija.svg);
+    background-image: url(/dist/images/application/patterns/nis-ilustracija-02.svg);
     background-repeat: no-repeat;
     background-position: -10% calc(100% - 24px);
     width: 100%;
@@ -28,7 +28,7 @@
     align-items: center;
 
     @include screen-up(screen-sm) {
-        background-image: url(/dist/images/nis-fortress-ilustration/nis-ilustracija.svg), url(/dist/images/nis-pattern-ilustration/nis-ilustracija-02.svg);
+        background-image: url(/dist/images/application/patterns/nis-ilustracija.svg), url(/dist/images/application/patterns/nis-ilustracija-02.svg);
         background-position: 850px calc(100% - 24px), -330px calc(100% - 24px);
         background-repeat: no-repeat no-repeat;
     }
@@ -56,24 +56,7 @@
         }
     }
     
-}
-    
-.coworking-wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    position: relative;
-    padding-top: 64px;
-    padding-bottom: 64px;
-    max-height: 1200px; 
-
-    @include screen-up(screen-md) {
-        padding-top: 0;
-        padding-bottom: 0;
-        flex-direction: row;
-    }
-
-    .coworking__img {
+    &__img {
         min-width: 300px;
         object-fit: contain; 
         max-width: 100%;
@@ -90,9 +73,7 @@
         }
     }
 
-    .coworking__text {
-        display: flex;
-        flex-direction: column;
+    &__text {
         max-width: 640px;
         min-width: 280px;
 
@@ -118,5 +99,21 @@
                 width: 500px;
             }
         }
+    }
+}
+    
+.coworking-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    padding-top: 64px;
+    padding-bottom: 64px;
+    max-height: 1200px; 
+
+    @include screen-up(screen-md) {
+        padding-top: 0;
+        padding-bottom: 0;
+        flex-direction: row;
     }
 }

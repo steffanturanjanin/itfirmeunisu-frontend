@@ -7,41 +7,41 @@ $white: #FFFFFF;
 $ghost-white: #F9FAFF;
 $faux-cool-gray: #8487B0;
 
-@font-face {
-  font-family: GoogleSans;
-  src: url(/dist/fonts/Google-Sans-Fonts/GoogleSans-Regular.ttf);
-  font-display: swap;
-  font-style: normal;
-  font-weight: normal;
+// @font-face {
+//   font-family: GoogleSans;
+//   src:
+//     local('GoogleSans'),
+//     local('GoogleSans-Regular'),
+//     url(/dist/fonts/Google-Sans-Fonts/WOFF2/GoogleSans-Regular.woff2) format('woff2'),
+//     url(/dist/fonts/Google-Sans-Fonts/WOFF/GoogleSans-Regular.woff) format('woff');
+//   font-display: swap;
+//   font-style: normal;
+//   font-weight: normal;
+// }
 
-  text-transform: none; // mac ff fix
-  -webkit-font-smoothing: antialiased; // safari mac nicer
-  -moz-osx-font-smoothing: grayscale; // fix fatty ff on mac
-}
+// @font-face {
+//   font-family: GoogleSans;
+//   src: 
+//     local('GoogleSans'),
+//     local('GoogleSans-Medium'),
+//     url(/dist/fonts/Google-Sans-Fonts/WOFF2/GoogleSans-Medium.woff2) format('woff2'),
+//     url(/dist/fonts/Google-Sans-Fonts/WOFF/GoogleSans-Medium.woff) format('woff');
+//   font-display: swap;
+//   font-style: normal;
+//   font-weight: 500;
+// }
 
-@font-face {
-  font-family: GoogleSans;
-  src: url(/dist/fonts/Google-Sans-Fonts/GoogleSans-Medium.ttf);
-  font-display: swap;
-  font-style: normal;
-  font-weight: 500;
-
-  text-transform: none; // mac ff fix
-  -webkit-font-smoothing: antialiased; // safari mac nicer
-  -moz-osx-font-smoothing: grayscale; // fix fatty ff on mac
-}
-
-@font-face {
-  font-family: GoogleSans;
-  src: url(/dist/fonts/Google-Sans-Fonts/GoogleSans-Bold.ttf);
-  font-display: swap;
-  font-style: normal;
-  font-weight: bold;
-
-  text-transform: none; // mac ff fix
-  -webkit-font-smoothing: antialiased; // safari mac nicer
-  -moz-osx-font-smoothing: grayscale; // fix fatty ff on mac
-}
+// @font-face {
+//   font-family: GoogleSans;
+//   src: 
+//     local('GoogleSans'),
+//     local('GoogleSans-Bold'),
+//     url(/dist/fonts/Google-Sans-Fonts/WOFF2/GoogleSans-Bold.woff2) format('woff2'),
+//     url(/dist/fonts/Google-Sans-Fonts/WOFF/GoogleSans-Bold.woff) format('woff');
+//   font-display: swap;
+//   font-style: normal;
+//   font-weight: bold;
+// }
 
 body {
   background-color: $primary-color;
@@ -49,13 +49,17 @@ body {
   min-width: 360px;
   position: relative;
   z-index: 1;
+
+  text-transform: none; // mac ff fix
+  -webkit-font-smoothing: antialiased; // safari mac nicer
+  -moz-osx-font-smoothing: grayscale; // fix fatty ff on mac
   
-  background-image: url("/dist/images/symbols/symbols.svg");
+  background-image: url("/dist/images/application/patterns/symbols.svg");
   background-repeat: no-repeat;
   background-position: right top;
 }
 
-* {
+*, *:before, *:after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
